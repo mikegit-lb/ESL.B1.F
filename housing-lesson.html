@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESL B1 Speaking Lesson: Housing, Flat-Hunting & Neighborhood Life</title>
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            home: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+            },
+            amberAccent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .card-flipped {
+      transform: rotateY(180deg);
+    }
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt !important;
+      }
+      .no-print, header, aside, .lesson-switcher-banner, #recordingStudio, #practiceTimer, button, .audio-btn {
+        display: none !important;
+      }
+      .card-inner {
+        transform: none !important;
+      }
+      .card-back {
+        display: block !important;
+        transform: none !important;
+        position: static !important;
+        border-top: 1px dashed #cbd5e1 !important;
+        margin-top: 0.5rem !important;
+        padding-top: 0.5rem !important;
+      }
+      .print-break-inside {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-200">
+
+  <!-- Curriculum Switcher Banner -->
+  <aside class="lesson-switcher-banner bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2" aria-label="Curriculum units navigation">
+    <div class="flex items-center space-x-2">
+      <span class="px-2 py-0.5 rounded bg-brand-600 text-white font-bold text-[10px] uppercase tracking-wider">B1 Curriculum</span>
+      <span>Select Module:</span>
+      <a href="index.html" class="text-slate-300 hover:text-white underline ml-1">Unit 1: Travel</a>
+      <span class="text-slate-600">•</span>
+      <a href="career-lesson.html" class="text-slate-300 hover:text-white underline">Unit 2: Workplace</a>
+      <span class="text-slate-600">•</span>
+      <a href="tech-lesson.html" class="text-slate-300 hover:text-white underline">Unit 3: Digital Life</a>
+      <span class="text-slate-600">•</span>
+      <a href="food-lesson.html" class="text-slate-300 hover:text-white underline">Unit 4: Food & Dining</a>
+      <span class="text-slate-600">•</span>
+      <a href="environment-lesson.html" class="text-slate-300 hover:text-white underline">Unit 5: Green Living</a>
+      <span class="text-slate-600">•</span>
+      <a href="health-lesson.html" class="text-slate-300 hover:text-white underline">Unit 6: Health & Fitness</a>
+      <span class="text-slate-600">•</span>
+      <a href="finance-lesson.html" class="text-slate-300 hover:text-white underline">Unit 7: Money & Spending</a>
+      <span class="text-slate-600">•</span>
+      <a href="entertainment-lesson.html" class="text-slate-300 hover:text-white underline">Unit 8: Entertainment</a>
+      <span class="text-slate-600">•</span>
+      <span class="text-amber-400 font-bold">Unit 9: Housing & Cities</span>
+      <span class="text-slate-600">•</span>
+      <a href="education-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 10: Education & Skills</a>
+    </div>
+    <div class="flex items-center space-x-3 text-[11px] text-slate-400">
+      <span><i class="fa-solid fa-graduation-cap text-amber-400 mr-1"></i> CEFR B1 Spoken Production & Interaction</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <i class="fa-solid fa-city text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200">CEFR B1 Intermediate</span>
+          <h1 class="text-base font-bold text-slate-900 leading-tight">ESL Speaking Studio</h1>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-600">
+        <a href="#warmup" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">1. Warm-Up</a>
+        <a href="#vocabulary" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">2. Housing Lexicon</a>
+        <a href="#functional" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">3. Flat-Hunting & Complaints</a>
+        <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Modifiers & Polite Requests</a>
+        <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Tenant Scenarios</a>
+        <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Neighborhood Pitch</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2">
+        <button id="ttsSpeedBtn" onclick="toggleTtsSpeed()" class="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm flex items-center space-x-1.5" title="Switch speech speed">
+          <i class="fa-solid fa-gauge-high text-brand-600"></i>
+          <span>Speed: <span id="speedLabel" class="text-brand-700 font-bold">1.0x</span></span>
+        </button>
+        <button onclick="window.print()" class="text-xs px-3 py-1.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-sm flex items-center space-x-1.5">
+          <i class="fa-solid fa-print"></i>
+          <span class="hidden sm:inline">Handout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-amber-50/70 via-white to-slate-50 py-10 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100/90 border border-amber-200 text-amber-800 text-xs font-semibold">
+            <i class="fa-solid fa-house-user"></i>
+            <span>Unit 9: Housing, Flat-Hunting & Neighborhood Life</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
+            Speaking Out Loud: <span class="text-brand-600">Apartment Viewings, Landlord Requests & House Rules</span>
+          </h2>
+          <p class="text-slate-600 text-base max-w-2xl leading-relaxed">
+            Acquire practical intermediate fluency to describe living spaces, inspect rental properties, negotiate tenancy agreements, politely report maintenance repairs to landlords, and resolve everyday friction with flatmates.
+          </p>
+        </div>
+        
+        <!-- Lesson Goals Card -->
+        <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-md shadow-amber-500/5 max-w-xs w-full text-xs space-y-2.5">
+          <div class="font-bold text-slate-900 flex items-center space-x-2">
+            <i class="fa-solid fa-bullseye text-brand-600"></i>
+            <span>Lesson Learning Targets (B1)</span>
+          </div>
+          <ul class="space-y-1.5 text-slate-600 list-disc list-inside">
+            <li>Ask probing questions during rental flat viewings.</li>
+            <li>Master <strong>comparative modifiers</strong> (*far more spacious*, *nowhere near as noisy*).</li>
+            <li>Use polite indirect requests with landlords & flatmates.</li>
+            <li>Debate urban city living vs. quiet suburban life.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+
+    <!-- Section 1: Warm-Up & Icebreakers -->
+    <section id="warmup" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 1: Fluency Activation</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Living Situations & Neighborhood Vibe</h3>
+        <p class="text-sm text-slate-500">Pick two prompt cards below. Speak out loud continuously for 60 seconds each using the guiding questions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">1</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Downtown Studio vs. Suburban House</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Would you rather live in a tiny, cramped studio apartment in the heart of the bustling city center, or a spacious house with a garden an hour's commute away?
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('Would you rather live in a tiny studio in the city center or a large house far away? Explain your reasons.')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">2</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">The Flatmate Nightmare</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              What is your number one pet peeve when sharing an apartment? Is it unwashed dishes piled in the sink, loud music past midnight, or someone eating your labeled groceries?
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('What is your biggest pet peeve when living with roommates or flatmates? Describe how you deal with it.')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-amber-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">3</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">The Dream Neighborhood</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              What local amenities are non-negotiable for you? Think about public transit, 24-hour convenience stores, leafy green parks, bakeries, and street lighting.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('Describe what features and amenities make up your ideal neighborhood.')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Core Housing Vocabulary (Flippable Flashcards) -->
+    <section id="vocabulary" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 2: Precision Lexicon</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">Essential Tenancy & Real Estate Collocations</h3>
+          <p class="text-sm text-slate-500">Click any card to flip and reveal the definition, pronunciation guide, example sentence, and spoken drill.</p>
+        </div>
+        <button onclick="flipAllCards()" class="self-start sm:self-center text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition">
+          <i class="fa-solid fa-arrows-rotate mr-1 text-brand-600"></i> Flip All Cards
+        </button>
+      </div>
+
+      <!-- 6 Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Vocab 1: Security deposit -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-50 text-brand-700 border border-amber-200">Financial Noun</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">security deposit</h4>
+                <p class="text-xs font-mono text-slate-400">/sɪˈkjʊərəti dɪˈpɒzɪt/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">A sum of money paid in advance to a landlord to cover potential damage or unpaid rent during the tenancy period.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-amber-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-amber-200">In Context</span>
+                <p class="text-xs text-amber-100 mt-2 italic">"The agency requires a two-month security deposit before handing over the keys."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Have you ever had trouble getting your deposit back from a landlord?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('The agency requires a two-month security deposit before handing over the keys.')" class="self-start text-xs bg-amber-600 hover:bg-amber-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 2: Utilities included -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">Lease Terminology</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">utilities included</h4>
+                <p class="text-xs font-mono text-slate-400">/juːˈtɪlɪtiz ɪnˈkluːdɪd/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Essential residential services (electricity, gas, water, heating, and trash collection) factored directly into the monthly rent.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-blue-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-blue-200">In Context</span>
+                <p class="text-xs text-blue-100 mt-2 italic">"Is high-speed internet and water heating included in the monthly rent, or are utilities billed separately?"</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Ask the landlord if heating bills are capped during winter."
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Is high-speed internet and water heating included in the monthly rent, or are utilities billed separately?')" class="self-start text-xs bg-blue-600 hover:bg-blue-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 3: Cramped vs. Spacious -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">Descriptive Pair</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">cramped / spacious</h4>
+                <p class="text-xs font-mono text-slate-400">/kræmpt/ - /ˈspeɪʃəs/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Cramped: uncomfortably small or crowded with furniture. Spacious: having ample room to move around comfortably.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-purple-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-purple-200">In Context</span>
+                <p class="text-xs text-purple-100 mt-2 italic">"Although the bedroom is rather cramped, the living room feels surprisingly spacious and airy."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Describe the size of your current kitchen using these adjectives."
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Although the bedroom is rather cramped, the living room feels surprisingly spacious and airy.')" class="self-start text-xs bg-purple-600 hover:bg-purple-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 4: Within walking distance -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">Prepositional Phrase</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">within walking distance</h4>
+                <p class="text-xs font-mono text-slate-400">/wɪðˈɪn ˈwɔːkɪŋ ˈdɪstəns/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Close enough to reach conveniently on foot in a few minutes without needing a car, bus, or bicycle.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-emerald-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-emerald-200">In Context</span>
+                <p class="text-xs text-emerald-100 mt-2 italic">"One big advantage is that the metro station and supermarket are well within walking distance."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What facilities are within walking distance of your home?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('One big advantage is that the metro station and supermarket are well within walking distance.')" class="self-start text-xs bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 5: Furnished vs Unfurnished -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">Property State</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">furnished / unfurnished</h4>
+                <p class="text-xs font-mono text-slate-400">/ˈfɜːnɪʃt/ - /ʌnˈfɜːnɪʃt/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Furnished: comes equipped with beds, sofas, tables, and appliances. Unfurnished: empty rooms requiring tenants to provide all furniture.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-rose-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-rose-200">In Context</span>
+                <p class="text-xs text-rose-100 mt-2 italic">"Since I am only staying for nine months, renting a fully furnished apartment is much more convenient."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What are the pros and cons of renting furnished accommodation?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Since I am only staying for nine months, renting a fully furnished apartment is much more convenient.')" class="self-start text-xs bg-rose-600 hover:bg-rose-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 6: Landlord vs Tenant -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">Roles / Nouns</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">landlord / tenant</h4>
+                <p class="text-xs font-mono text-slate-400">/ˈlændlɔːd/ - /ˈtenənt/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">A landlord (or landlady) is the person who owns the property; the tenant is the person who pays rent to live in it.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-slate-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-slate-200">In Context</span>
+                <p class="text-xs text-slate-200 mt-2 italic">"Legally, the landlord is responsible for major plumbing repairs, while the tenant handles daily upkeep."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What qualities make someone a great landlord or tenant?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Legally, the landlord is responsible for major plumbing repairs, while the tenant handles daily upkeep.')" class="self-start text-xs bg-slate-700 hover:bg-slate-600 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Functional Phrases for Viewings, Complaints & Flatmate House Rules -->
+    <section id="functional" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 3: Spoken Interaction Toolkit</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Inquiring During Viewings & Reporting Repairs</h3>
+        <p class="text-sm text-slate-500">Essential spoken stems for inspecting a flat, asking critical lease questions, and making polite yet firm repair demands.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Category 1: Flat Inspection & Lease Inquiries -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-amber-700 font-bold text-sm">
+            <i class="fa-solid fa-magnifying-glass-location text-amber-500"></i>
+            <span>Asking During an Apartment Viewing</span>
+          </div>
+          <p class="text-xs text-slate-500">Inspect the property carefully and clarify costs before signing anything.</p>
+          
+          <div class="space-y-3">
+            <div class="bg-slate-50 hover:bg-amber-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"Could you tell me how much the average monthly bills come to in winter?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Polite indirect question about hidden utility expenses.</span>
+              </div>
+              <button onclick="playTTS('Could you tell me how much the average monthly bills come to in winter?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-amber-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"What is the minimum lease term, and how much notice do I need to give?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Clarifying tenancy duration and break-clause terms.</span>
+              </div>
+              <button onclick="playTTS('What is the minimum lease term, and how much notice do I need to give?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-amber-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"Is street parking readily available, or is a resident permit required?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Practical consideration for car owners.</span>
+              </div>
+              <button onclick="playTTS('Is street parking readily available, or is a resident permit required?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Polite Landlord Complaints & Flatmate House Rules -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-slate-700 font-bold text-sm">
+            <i class="fa-solid fa-wrench text-brand-600"></i>
+            <span>Reporting Maintenance & Setting House Boundaries</span>
+          </div>
+          <p class="text-xs text-slate-500">Communicate firmly without being confrontational or aggressive.</p>
+          
+          <div class="space-y-3">
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"I'm calling to report that the bathroom radiator has stopped working completely."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Standard opening formula for tenant maintenance calls.</span>
+              </div>
+              <button onclick="playTTS('I am calling to report that the bathroom radiator has stopped working completely.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"Could you send an engineer round to take a look as soon as possible?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Requesting a technician or repair person to visit.</span>
+              </div>
+              <button onclick="playTTS('Could you send an engineer round to take a look as soon as possible?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"Would you mind doing the dishes right after dinner so the sink stays clear?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Diplomatic housemate request using 'Would you mind + -ing'.</span>
+              </div>
+              <button onclick="playTTS('Would you mind doing the dishes right after dinner so the sink stays clear?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Grammar in Action (Comparative Modifiers & Polite Inquiries) -->
+    <section id="grammar" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 4: Structural Accuracy</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Target Grammar: Comparative Modifiers & Polite Inquiries</h3>
+        <p class="text-sm text-slate-500">At B1 level, don't just say "it is bigger". Use precision modifiers (*far*, *significantly*, *slightly*, *nowhere near as... as*) to describe housing trade-offs.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Pillar A: Modifying Comparatives -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-brand-700 font-bold text-sm">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Modifiers for Big vs. Small Differences</span>
+          </div>
+          
+          <div class="space-y-2.5 text-xs text-slate-600">
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-100">
+              <span class="font-bold text-amber-800 block mb-1">Big Difference (far / significantly / way):</span>
+              <p>"The suburban flat is <span class="font-bold text-brand-700 underline">far more spacious</span> than the downtown studio."</p>
+              <p class="text-[11px] text-slate-500 mt-1">("way more spacious" is natural in casual spoken English)</p>
+            </div>
+
+            <div class="p-3 bg-blue-50 rounded-xl border border-blue-100">
+              <span class="font-bold text-blue-800 block mb-1">Small Difference (slightly / a bit / a little):</span>
+              <p>"The ground floor apartment is <span class="font-bold text-blue-700 underline">slightly cheaper</span>, but has less natural light."</p>
+            </div>
+
+            <div class="p-3 bg-purple-50 rounded-xl border border-purple-100">
+              <span class="font-bold text-purple-800 block mb-1">Extreme Negative Comparison (nowhere near as... as):</span>
+              <p>"The second flat is <span class="font-bold text-purple-700 underline">nowhere near as convenient</span> as the first one."</p>
+              <p class="text-[11px] text-slate-500 mt-1">(Meaning: The second flat is dramatically less convenient)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar B: Indirect Questions for Landlords -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-slate-800 font-bold text-sm">
+            <i class="fa-solid fa-comments"></i>
+            <span>Indirect Questions (Polite B1 Word Order)</span>
+          </div>
+          <p class="text-xs text-slate-500">Direct questions can sound aggressive when negotiating. Use introductory stems with normal statement word order (no inversion).</p>
+          
+          <div class="space-y-3 text-xs">
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div class="flex items-center justify-between text-[11px] text-rose-600 font-semibold line-through">
+                <span>Direct: "Where is the nearest bus stop?"</span>
+              </div>
+              <p class="font-semibold text-slate-800 mt-1">"Could you tell me where the nearest bus stop <span class="text-brand-600 font-bold">is</span>?"</p>
+              <span class="text-[11px] text-slate-500 block mt-0.5">Subject + verb remains affirmative.</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div class="flex items-center justify-between text-[11px] text-rose-600 font-semibold line-through">
+                <span>Direct: "Does the rent include Wi-Fi?"</span>
+              </div>
+              <p class="font-semibold text-slate-800 mt-1">"I was wondering if the rent <span class="text-brand-600 font-bold">includes</span> Wi-Fi."</p>
+              <span class="text-[11px] text-slate-500 block mt-0.5">Use 'if' or 'whether' for yes/no inquiries.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Grammar Check -->
+      <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-md space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-circle-question text-amber-400"></i>
+            <h4 class="font-bold text-sm">Rapid Accuracy Check: Choose the Natural Spoken Structure</h4>
+          </div>
+          <span class="text-xs text-slate-400">B1 Review</span>
+        </div>
+
+        <div class="space-y-3 text-xs" id="quizContainer">
+          <!-- Question 1 -->
+          <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <span class="text-slate-200">1. "Could you tell me how much ________ every month?"</span>
+            <div class="flex items-center space-x-2 shrink-0">
+              <button onclick="checkAnswer(this, false, 'In indirect questions, we do not invert the auxiliary: use normal statement order.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">does the heating cost</button>
+              <button onclick="checkAnswer(this, true, 'Excellent! Normal word order: how much the heating costs.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">the heating costs</button>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <span class="text-slate-200">2. "This attic bedroom is ________ more cramped than the master bedroom downstairs."</span>
+            <div class="flex items-center space-x-2 shrink-0">
+              <button onclick="checkAnswer(this, true, 'Correct! Far is a strong modifier for comparative adjectives.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">far</button>
+              <button onclick="checkAnswer(this, false, 'We cannot use very with comparative forms; use far, much, or slightly.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">very</button>
+            </div>
+          </div>
+        </div>
+        <div id="quizFeedback" class="text-xs text-amber-300 font-medium hidden"></div>
+      </div>
+    </section>
+
+    <!-- Section 5: Real-World Tenant & Flatmate Roleplays -->
+    <section id="roleplay" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 5: Spoken Interaction</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Conversational Scenarios & Roleplay Tasks</h3>
+        <p class="text-sm text-slate-500">Pair up or practice speaking both roles out loud. Use the integrated prep & speaking timers below.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Scenario A -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 text-brand-700 text-[11px] font-bold">
+              <i class="fa-solid fa-key"></i>
+              <span>Scenario A: The Flat Viewing</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Inspecting & Asking the Landlord</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> You are viewing a furnished 1-bedroom flat. You notice damp marks near the window and you want to know about building noise and utility costs before agreeing to put down a deposit.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "Could you tell me if the windows are double-glazed?"</p>
+              <p>• "I noticed some damp near the sill; will that be repainted?"</p>
+              <p>• "How much of a security deposit do you require upfront?"</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario A: The Flat Viewing & Landlord Questions')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+        <!-- Scenario B -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 text-[11px] font-bold">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Scenario B: Urgent Maintenance Call</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Burst Pipe or Broken Boiler</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> It is November and your apartment's heating and hot water broke down 24 hours ago. You phoned yesterday, but nobody showed up. You call the rental agent again, remaining polite but firm.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "I called yesterday regarding the boiler..."</p>
+              <p>• "The temperature has dropped significantly..."</p>
+              <p>• "Could you give me an exact time when the plumber will arrive?"</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario B: Urgent Boiler Maintenance Call')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+        <!-- Scenario C -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-bold">
+              <i class="fa-solid fa-users"></i>
+              <span>Scenario C: The Flatmate Chore Meeting</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Agreeing on Cleaning & Noise Rules</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> You and two flatmates share a communal kitchen and bathroom. One flatmate constantly leaves dirty pans for three days and plays video games late on weekdays. You hold a house meeting.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "I think we need to create a fair weekly cleaning rota..."</p>
+              <p>• "Would you mind keeping quiet hours after 11 PM?"</p>
+              <p>• "It's nowhere near fair for one person to do all the scrubbing."</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario C: The Flatmate House Rules Meeting')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Integrated Timer Widget -->
+      <div id="practiceTimer" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="space-y-1 text-center sm:text-left">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Interactive Speaking Clock</span>
+          <h4 id="activeScenarioTitle" class="text-base font-bold text-slate-900">Select a scenario above to start practice</h4>
+          <p id="timerPhaseLabel" class="text-xs text-slate-500">Preparation: 60s | Spoken delivery: 90s</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="text-3xl font-extrabold font-mono text-slate-900 bg-slate-100 px-4 py-2 rounded-xl border border-slate-200" id="timerDisplay">
+            01:00
+          </div>
+          <div class="flex items-center space-x-2">
+            <button id="startTimerBtn" onclick="toggleTimer()" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center space-x-1">
+              <i class="fa-solid fa-play" id="timerIcon"></i>
+              <span id="timerBtnText">Start Prep</span>
+            </button>
+            <button onclick="resetTimer()" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Fluency Pitch & Recording Studio -->
+    <section id="challenge" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 6: Spoken Production Assessment</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Fluency Pitch: "My Ideal Home & Neighborhood"</h3>
+        <p class="text-sm text-slate-500">Record yourself giving an authentic B1 monologue comparing two types of neighborhoods and describing your ideal home. Listen back to evaluate pronunciation and flow.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Pitch Guidelines -->
+        <div class="lg:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h4 class="font-bold text-slate-900 text-sm flex items-center space-x-2">
+            <i class="fa-solid fa-list-check text-brand-600"></i>
+            <span>Structure Your 90-Second Spoken Pitch</span>
+          </h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">1. Current Living Situation (20s):</span>
+              <p>Where you live right now, whether it's furnished/unfurnished, and its size.</p>
+              <span class="italic text-[11px] text-slate-500">"Currently, I rent a slightly cramped apartment..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">2. Neighborhood Amenities (25s):</span>
+              <p>What is within walking distance and what the public transport links are like.</p>
+              <span class="italic text-[11px] text-slate-500">"It is far more convenient because..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">3. The Trade-Offs (25s):</span>
+              <p>Compare city center living with quieter suburban alternatives.</p>
+              <span class="italic text-[11px] text-slate-500">"While downtown is lively, it is nowhere near as quiet..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">4. Your Ideal Future Home (20s):</span>
+              <p>What kind of property you hope to rent or buy in the next five years.</p>
+              <span class="italic text-[11px] text-slate-500">"If I had the budget, I would choose..."</span>
+            </div>
+          </div>
+
+          <!-- Model Sample Audio -->
+          <div class="p-4 bg-amber-50/80 rounded-xl border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div>
+              <span class="font-bold text-brand-900 block">Listen to Model Answer (B1 Benchmark)</span>
+              <span class="text-slate-600">90-second balanced description of city versus suburban living.</span>
+            </div>
+            <button onclick="playModelHousingPitch()" class="px-3.5 py-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-xl shadow-sm transition flex items-center space-x-1.5 shrink-0">
+              <i class="fa-solid fa-circle-play text-sm"></i>
+              <span>Play Sample Answer</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recording Studio Card -->
+        <div id="recordingStudio" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between space-y-5">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Live Voice Lab</span>
+              <div id="recordingIndicator" class="flex items-center space-x-1 text-xs text-amber-400 hidden">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                <span>Recording</span>
+              </div>
+            </div>
+            <h4 class="font-bold text-base">Record Your Housing Pitch</h4>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Use your device's microphone to record your 90-second response. Listen back to check fluency, comparative modifiers, and clarity.
+            </p>
+          </div>
+
+          <!-- Record Controls -->
+          <div class="space-y-3">
+            <div class="flex items-center space-x-2">
+              <button id="recordBtn" onclick="toggleRecording()" class="w-full py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow-md transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-microphone text-sm" id="micIcon"></i>
+                <span id="recordBtnText">Start Recording</span>
+              </button>
+            </div>
+
+            <!-- Audio Player -->
+            <div id="audioPlaybackContainer" class="hidden space-y-2 pt-2 border-t border-slate-700">
+              <span class="text-[11px] text-slate-300 block">Your Recorded Monologue:</span>
+              <audio id="audioPlayback" controls class="w-full h-8 rounded-lg outline-none"></audio>
+            </div>
+          </div>
+
+          <div class="text-[11px] text-slate-500 text-center">
+            Private in-browser recording • Audio stays on your machine
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Self-Assessment Rubric -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+        <h4 class="font-bold text-slate-900 text-sm flex items-center space-x-2">
+          <i class="fa-solid fa-clipboard-check text-brand-600"></i>
+          <span>CEFR B1 Self-Evaluation Checklist</span>
+        </h4>
+        <p class="text-xs text-slate-500">Check off the criteria you achieved during your spoken practice:</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Used at least 2 housing collocations (*utilities included*, *within walking distance*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Used comparative modifiers (*far more*, *slightly less*, *nowhere near as*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Used a polite indirect question (*"Could you tell me if..."*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Spoke continuously for over 60 seconds with clear pronunciation.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 space-y-2">
+    <p>© 2026 ESL Speaking Studio • CEFR B1 Fluency Curriculum Suite</p>
+    <p class="text-slate-400">Unit 9: Housing, Flat-Hunting & Neighborhood Life • Ready for Classroom Handouts & Browser Practice</p>
+  </footer>
+
+  <!-- Script for Interactive Capabilities -->
+  <script>
+    // State
+    let ttsRate = 1.0;
+    let timerInterval = null;
+    let timerSeconds = 60;
+    let isTimerRunning = false;
+    let timerPhase = 'prep'; // 'prep' or 'speak'
+    let mediaRecorder = null;
+    let recordedChunks = [];
+    let isRecording = false;
+
+    // TTS Speed Toggle
+    function toggleTtsSpeed() {
+      if (ttsRate === 1.0) {
+        ttsRate = 0.8;
+        document.getElementById('speedLabel').innerText = '0.8x';
+      } else {
+        ttsRate = 1.0;
+        document.getElementById('speedLabel').innerText = '1.0x';
+      }
+    }
+
+    // Play TTS
+    function playTTS(text) {
+      if (!('speechSynthesis' in window)) {
+        alert('Text-to-speech is not supported by your browser.');
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = ttsRate;
+      utterance.lang = 'en-GB';
+
+      const voices = window.speechSynthesis.getVoices();
+      const ukVoice = voices.find(v => v.lang === 'en-GB' || v.name.includes('UK') || v.name.includes('British'));
+      if (ukVoice) utterance.voice = ukVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Model Housing Pitch Sample
+    function playModelHousingPitch() {
+      const sampleText = "Currently, I live in a furnished studio apartment near the university. Although it is rather cramped and lacks storage space, it is far more convenient than my previous home because the metro station and grocery store are well within walking distance. However, downtown is nowhere near as quiet as the suburbs, and traffic noise can be frustrating at night. If I could choose my ideal home in five years, I would look for a two-bedroom flat in a green, residential neighborhood with lower utility bills and friendly flatmates.";
+      playTTS(sampleText);
+    }
+
+    // Flashcard Flipping
+    function flipCard(cardElem) {
+      const inner = cardElem.querySelector('.card-inner');
+      inner.classList.toggle('card-flipped');
+    }
+
+    function flipAllCards() {
+      const cards = document.querySelectorAll('.card-inner');
+      const anyUnflipped = Array.from(cards).some(c => !c.classList.contains('card-flipped'));
+      cards.forEach(c => {
+        if (anyUnflipped) {
+          c.classList.add('card-flipped');
+        } else {
+          c.classList.remove('card-flipped');
+        }
+      });
+    }
+
+    // Grammar Quiz Check
+    function checkAnswer(btnElem, isCorrect, feedbackText) {
+      const feedbackDiv = document.getElementById('quizFeedback');
+      feedbackDiv.classList.remove('hidden', 'text-rose-400', 'text-emerald-400');
+      
+      const parent = btnElem.parentElement;
+      const buttons = parent.querySelectorAll('button');
+      buttons.forEach(b => {
+        b.disabled = true;
+        b.classList.remove('bg-brand-600', 'bg-emerald-600');
+      });
+
+      if (isCorrect) {
+        btnElem.classList.add('bg-emerald-600', 'text-white');
+        feedbackDiv.classList.add('text-emerald-400');
+        feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> ${feedbackText}`;
+      } else {
+        btnElem.classList.add('bg-rose-600', 'text-white');
+        feedbackDiv.classList.add('text-rose-400');
+        feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1"></i> ${feedbackText}`;
+      }
+    }
+
+    // Timer Logic
+    function loadScenarioPrompt(title) {
+      document.getElementById('activeScenarioTitle').innerText = title;
+      resetTimer();
+      const timerWidget = document.getElementById('practiceTimer');
+      timerWidget.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(timerSeconds / 60);
+      const secs = timerSeconds % 60;
+      document.getElementById('timerDisplay').innerText = 
+        `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function playBeep() {
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.value = 587.33; // D5
+        osc.type = 'sine';
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.5);
+      } catch (e) {
+        console.log('Web Audio tone suppressed:', e);
+      }
+    }
+
+    function toggleTimer() {
+      if (isTimerRunning) {
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        document.getElementById('timerIcon').className = 'fa-solid fa-play';
+        document.getElementById('timerBtnText').innerText = 'Resume';
+      } else {
+        isTimerRunning = true;
+        document.getElementById('timerIcon').className = 'fa-solid fa-pause';
+        document.getElementById('timerBtnText').innerText = 'Pause';
+        
+        timerInterval = setInterval(() => {
+          if (timerSeconds > 0) {
+            timerSeconds--;
+            updateTimerDisplay();
+          } else {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            playBeep();
+
+            if (timerPhase === 'prep') {
+              timerPhase = 'speak';
+              timerSeconds = 90;
+              document.getElementById('timerPhaseLabel').innerHTML = '<span class="text-brand-600 font-bold">Speaking Time! Deliver your answer out loud.</span>';
+              document.getElementById('timerBtnText').innerText = 'Start Speaking';
+              document.getElementById('timerIcon').className = 'fa-solid fa-play';
+              updateTimerDisplay();
+            } else {
+              timerPhase = 'done';
+              document.getElementById('timerPhaseLabel').innerHTML = '<span class="text-emerald-600 font-bold">Time finished! Great effort.</span>';
+              document.getElementById('timerBtnText').innerText = 'Restart';
+              document.getElementById('timerIcon').className = 'fa-solid fa-rotate-right';
+            }
+          }
+        }, 1000);
+      }
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      isTimerRunning = false;
+      timerPhase = 'prep';
+      timerSeconds = 60;
+      updateTimerDisplay();
+      document.getElementById('timerPhaseLabel').innerText = 'Preparation: 60s | Spoken delivery: 90s';
+      document.getElementById('timerBtnText').innerText = 'Start Prep';
+      document.getElementById('timerIcon').className = 'fa-solid fa-play';
+    }
+
+    // Audio Recorder
+    async function toggleRecording() {
+      const recordBtn = document.getElementById('recordBtn');
+      const recordBtnText = document.getElementById('recordBtnText');
+      const micIcon = document.getElementById('micIcon');
+      const indicator = document.getElementById('recordingIndicator');
+      const playbackContainer = document.getElementById('audioPlaybackContainer');
+      const audioPlayback = document.getElementById('audioPlayback');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          recordedChunks = [];
+          mediaRecorder = new MediaRecorder(stream);
+
+          mediaRecorder.ondataavailable = (e) => {
+            if (e.data.size > 0) recordedChunks.push(e.data);
+          };
+
+          mediaRecorder.onstop = () => {
+            const blob = new Blob(recordedChunks, { type: 'audio/webm' });
+            const audioUrl = URL.createObjectURL(blob);
+            audioPlayback.src = audioUrl;
+            playbackContainer.classList.remove('hidden');
+            stream.getTracks().forEach(track => track.stop());
+          };
+
+          mediaRecorder.start();
+          isRecording = true;
+          recordBtn.classList.remove('bg-brand-600', 'hover:bg-brand-500');
+          recordBtn.classList.add('bg-rose-600', 'hover:bg-rose-700');
+          recordBtnText.innerText = 'Stop Recording';
+          micIcon.className = 'fa-solid fa-stop text-sm';
+          indicator.classList.remove('hidden');
+        } catch (err) {
+          alert('Microphone access was denied or is unavailable in your browser.');
+        }
+      } else {
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+        isRecording = false;
+        recordBtn.classList.remove('bg-rose-600', 'hover:bg-rose-700');
+        recordBtn.classList.add('bg-brand-600', 'hover:bg-brand-500');
+        recordBtnText.innerText = 'Record Again';
+        micIcon.className = 'fa-solid fa-microphone text-sm';
+        indicator.classList.add('hidden');
+      }
+    }
+
+    // Initial voice cache load for TTS
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+      };
+    }
+  </script>
+</body>
+</html>

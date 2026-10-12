@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B1 English Speaking Masterclass | Travel Dilemmas & Stories</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              500: '#0d9488',
+              600: '#0f766e',
+              700: '#115e59',
+              800: '#134e4a',
+            },
+            accent: {
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom animations and card flip */
+    .perspective {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .audio-wave-bar {
+      animation: bounceWave 1.2s ease-in-out infinite alternate;
+    }
+    @keyframes bounceWave {
+      0% { height: 4px; }
+      100% { height: 28px; }
+    }
+    @media print {
+      header, button, select, #ttsSpeedBtn, #scenarioSelect, .no-print {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .vocab-example, #warmupSampleBox, #panel-opinion, #panel-polite, #panel-buyingTime {
+        display: block !important;
+      }
+      section {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        margin-bottom: 1.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-200">
+
+  <!-- Curriculum Switcher Banner -->
+  <aside class="lesson-switcher-banner bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2" aria-label="Curriculum units navigation">
+    <div class="flex items-center space-x-2">
+      <span class="px-2 py-0.5 rounded bg-brand-600 text-white font-bold text-[10px] uppercase tracking-wider">B1 Curriculum</span>
+      <span>Select Module:</span>
+      <span class="text-teal-400 font-bold">Unit 1: Travel</span>
+      <span class="text-slate-600">•</span>
+      <a href="career-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 2: Workplace</a>
+      <span class="text-slate-600">•</span>
+      <a href="tech-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 3: Digital Life</a>
+      <span class="text-slate-600">•</span>
+      <a href="food-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 4: Food & Dining</a>
+      <span class="text-slate-600">•</span>
+      <a href="environment-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 5: Green Living</a>
+      <span class="text-slate-600">•</span>
+      <a href="health-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 6: Health</a>
+      <span class="text-slate-600">•</span>
+      <a href="finance-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 7: Money & Spending</a>
+      <span class="text-slate-600">•</span>
+      <a href="entertainment-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 8: Entertainment</a>
+      <span class="text-slate-600">•</span>
+      <a href="housing-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 9: Housing</a>
+      <span class="text-slate-600">•</span>
+      <a href="education-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 10: Education</a>
+    </div>
+    <div class="flex items-center space-x-3 text-[11px] text-slate-400">
+      <span><i class="fa-solid fa-graduation-cap text-teal-400 mr-1"></i> CEFR B1 Spoken Production & Interaction</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-teal-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <i class="fa-solid fa-microphone-lines text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200">CEFR B1 Intermediate</span>
+          <h1 class="text-base font-bold text-slate-900 leading-tight">ESL Speaking Studio</h1>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-600">
+        <a href="#warmup" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">1. Warm-Up</a>
+        <a href="#vocabulary" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">2. Vocabulary</a>
+        <a href="#functional" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">3. Useful Phrases</a>
+        <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Narrative Tenses</a>
+        <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Roleplay</a>
+        <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Fluency Challenge</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2">
+        <button id="ttsSpeedBtn" onclick="toggleTtsSpeed()" class="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm flex items-center space-x-1.5" title="Switch between normal and slow speech speed">
+          <i class="fa-solid fa-gauge-high text-brand-600"></i>
+          <span>Speed: <span id="speedLabel" class="text-brand-700 font-bold">1.0x</span></span>
+        </button>
+        <button onclick="window.print()" class="text-xs px-3 py-1.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-sm flex items-center space-x-1.5">
+          <i class="fa-solid fa-print"></i>
+          <span class="hidden sm:inline">Handout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-teal-50/70 via-white to-slate-50 py-10 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-teal-100/80 border border-teal-200 text-teal-800 text-xs font-semibold">
+            <i class="fa-regular fa-compass"></i>
+            <span>Unit 4: Travel Adventures & Unexpected Dilemmas</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
+            Speaking Out Loud: <span class="text-brand-600">Tell Your Story & Solve Travel Problems</span>
+          </h2>
+          <p class="text-slate-600 text-base max-w-2xl leading-relaxed">
+            Master the communicative skills needed to narrate past adventures, handle travel mishaps politely, express opinions, and negotiate solutions naturally at the B1 level.
+          </p>
+        </div>
+
+        <!-- Lesson Info Badge Card -->
+        <div class="w-full md:w-auto min-w-[260px] bg-white p-4 rounded-2xl border border-slate-200/80 shadow-md shadow-slate-200/50 space-y-3">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span><i class="fa-regular fa-clock mr-1 text-brand-500"></i> Approx. 45-60 min</span>
+            <span class="text-brand-600 font-semibold"><i class="fa-solid fa-user-group mr-1"></i> Pairs or Solo</span>
+          </div>
+          <div class="border-t border-slate-100 pt-2.5 text-xs text-slate-700 space-y-1.5">
+            <div class="font-bold text-slate-900 uppercase tracking-wider text-[10px] text-slate-400">CEFR B1 Can-Do Goals</div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Narrate a sequence of past events smoothly</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Politely complain & negotiate a solution</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Express and justify personal opinions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+
+    <!-- 1. Warm-Up & Icebreaker -->
+    <section id="warmup" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 1: Lead-In (5-8 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">Icebreaker: Travel Mishap Roulette</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Click the button to draw a discussion card with your partner or practice answering aloud.</p>
+        </div>
+        <button onclick="drawWarmupCard()" class="px-4 py-2 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-700 font-semibold text-sm border border-brand-200 flex items-center space-x-2 transition shadow-sm active:scale-95">
+          <i class="fa-solid fa-shuffle"></i>
+          <span>Draw Random Question</span>
+        </button>
+      </div>
+
+      <!-- Interactive Question Card Display -->
+      <div id="warmupCardBox" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-8 shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-between text-xs text-teal-400 font-medium tracking-wide mb-3">
+          <span id="warmupCategory"><i class="fa-solid fa-plane-departure mr-1.5"></i> Travel Experience</span>
+          <span id="warmupIndex">Question 1 of 5</span>
+        </div>
+        <h4 id="warmupQuestion" class="text-xl sm:text-2xl font-semibold leading-relaxed mb-6 font-display">
+          "Have you ever missed a bus, train, or flight? What happened, and how did you resolve the situation?"
+        </h4>
+        
+        <!-- Helpful B1 Thinking Prompts -->
+        <div class="bg-white/10 rounded-xl p-4 text-xs sm:text-sm text-slate-200 backdrop-blur-sm space-y-1 border border-white/10">
+          <span class="font-bold text-amber-300 block mb-1"><i class="fa-regular fa-lightbulb mr-1"></i> Speaking Tips for B1 Learners:</span>
+          <p id="warmupTip">• Use time linkers: <em>"A few years ago...", "While I was waiting...", "Suddenly I realized...", "Eventually..."</em></p>
+        </div>
+
+        <!-- Audio Model & Recording Bar -->
+        <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex items-center space-x-2">
+            <button onclick="speakText(document.getElementById('warmupQuestion').innerText)" class="px-3 py-1.5 rounded-lg bg-teal-500/20 hover:bg-teal-500/30 text-teal-300 border border-teal-500/30 font-medium transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen to Model Pronunciation</span>
+            </button>
+            <button onclick="toggleWarmupSample()" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/10 font-medium transition">
+              <i class="fa-regular fa-eye mr-1"></i> <span id="sampleToggleText">Show Model B1 Answer</span>
+            </button>
+          </div>
+          <span class="text-slate-400">Aim for at least 30-45 seconds of continuous speaking.</span>
+        </div>
+
+        <!-- Hidden Model Answer Panel -->
+        <div id="warmupSampleBox" class="hidden mt-4 pt-4 border-t border-white/10 text-sm text-slate-200 bg-white/5 p-4 rounded-xl">
+          <p class="font-semibold text-teal-300 mb-1">Example Model Answer (B1 Target):</p>
+          <p id="warmupSampleAnswer" class="italic text-slate-300 leading-relaxed">
+            "Yes, definitely! Two summers ago, I was travelling to Barcelona by train. While I was waiting at the station, I was reading a book and didn't notice the departure platform had changed. When I finally arrived at the gate, the doors were already locked! At first, I felt panic, but I immediately went to the customer desk. Fortunately, the staff were sympathetic and transferred my ticket to the next departure without any extra fee."
+          </p>
+          <div class="mt-2 text-xs text-amber-300 flex items-center space-x-2">
+            <button onclick="speakText(document.getElementById('warmupSampleAnswer').innerText)" class="text-teal-300 underline hover:text-teal-200">
+              <i class="fa-solid fa-play text-[10px] mr-1"></i> Play full sample audio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Target Vocabulary & Collocations -->
+    <section id="vocabulary" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 2: Lexical Input (10 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">High-Frequency B1 Travel Collocations</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Click the audio icon to listen and repeat. Click any card to flip and view the example sentence.</p>
+        </div>
+        <div class="text-xs bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600 font-semibold flex items-center space-x-1">
+          <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Click card to flip
+        </div>
+      </div>
+
+      <!-- Flashcards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-brand-100 text-brand-700">Verb + Noun</span>
+            <button onclick="event.stopPropagation(); speakText('to miss a connecting flight')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Miss a connecting flight</h4>
+          <p class="text-xs text-slate-500 mt-1">To arrive too late for the second leg of your airplane journey.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "Because our first plane was delayed by 40 minutes, we missed our connecting flight in Frankfurt."
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Noun Phrase</span>
+            <button onclick="event.stopPropagation(); speakText('lost luggage')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Lost luggage / baggage</h4>
+          <p class="text-xs text-slate-500 mt-1">Suitcases that fail to appear on the carousel at baggage reclaim.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "We stood waiting at baggage claim for an hour before filing a report for our lost luggage."
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Verb + Noun</span>
+            <button onclick="event.stopPropagation(); speakText('to file a formal complaint')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">File a formal complaint</h4>
+          <p class="text-xs text-slate-500 mt-1">To officially submit a written problem to a company or customer service.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "The hotel room was completely dirty, so I decided to file a formal complaint with the manager."
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Collocation</span>
+            <button onclick="event.stopPropagation(); speakText('fully booked')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Fully booked / overbooked</h4>
+          <p class="text-xs text-slate-500 mt-1">Having no vacant rooms, seats, or tickets left available.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "Unfortunately, all budget hotels in the city centre were fully booked for the festival weekend."
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">Noun</span>
+            <button onclick="event.stopPropagation(); speakText('compensation and refund')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Compensation & Refund</h4>
+          <p class="text-xs text-slate-500 mt-1">Money or vouchers paid back to a traveler for inconvenience or cancelled services.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "Because the flight was cancelled without warning, passengers were entitled to €250 in compensation."
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">Idiom / Phrasal</span>
+            <button onclick="event.stopPropagation(); speakText('stranded in the middle of nowhere')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Stranded (somewhere)</h4>
+          <p class="text-xs text-slate-500 mt-1">Unable to leave a place because of transport problems or bad weather.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "When the last bus broke down on the mountain road, we were stranded until midnight."
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Interactive Vocab Check Quiz -->
+      <div class="bg-brand-50/60 rounded-2xl p-5 border border-brand-200">
+        <div class="flex items-center space-x-2 text-brand-800 font-bold text-sm mb-3">
+          <i class="fa-solid fa-circle-question text-brand-600"></i>
+          <span>Check Your Understanding: Quick Fill-in</span>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">
+          "When our flight was cancelled, the airline offered us a hotel voucher and €200 in financial <span class="font-bold underline text-brand-700">_________</span>."
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <button onclick="checkVocabQuiz(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">luggage</button>
+          <button onclick="checkVocabQuiz(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">compensation</button>
+          <button onclick="checkVocabQuiz(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">overbooked</button>
+        </div>
+        <div id="vocabQuizFeedback" class="hidden mt-2.5 text-xs font-semibold"></div>
+      </div>
+    </section>
+
+    <!-- 3. Functional Language for B1 Speaking -->
+    <section id="functional" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 3: Speaking Strategies (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">B1 Functional Language Toolkit</h3>
+        <p class="text-sm text-slate-500 mt-0.5">Categorized phrases essential for B1 fluency. Practice saying each one smoothly.</p>
+      </div>
+
+      <!-- Interactive Tabbed Categories -->
+      <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3" id="phraseTabs">
+        <button onclick="switchPhraseTab('story')" id="tabBtn-story" class="phrase-tab-btn active px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-brand-600 text-white shadow-sm transition">
+          <i class="fa-solid fa-book-open mr-1.5"></i> Storytelling & Sequencing
+        </button>
+        <button onclick="switchPhraseTab('opinion')" id="tabBtn-opinion" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-comments mr-1.5"></i> Expressing Opinions & Doubts
+        </button>
+        <button onclick="switchPhraseTab('polite')" id="tabBtn-polite" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-handshake-angle mr-1.5"></i> Polite Complaints & Requests
+        </button>
+        <button onclick="switchPhraseTab('buyingTime')" id="tabBtn-buyingTime" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-stopwatch mr-1.5"></i> Buying Time & Clarifying
+        </button>
+      </div>
+
+      <!-- Tab Content Panels -->
+      <div id="phrasePanels" class="space-y-3">
+        <!-- Storytelling Tab -->
+        <div id="panel-story" class="phrase-panel grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Beginning an anecdote</span>
+              <p class="text-sm font-semibold text-slate-800">"A few years ago, when I was visiting..."</p>
+            </div>
+            <button onclick="speakText('A few years ago, when I was visiting...')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Sudden unexpected event</span>
+              <p class="text-sm font-semibold text-slate-800">"All of a sudden / Out of the blue..."</p>
+            </div>
+            <button onclick="speakText('All of a sudden, the electricity went completely out.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Escalating the drama</span>
+              <p class="text-sm font-semibold text-slate-800">"To make matters worse..."</p>
+            </div>
+            <button onclick="speakText('To make matters worse, it started raining heavily.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Concluding the story</span>
+              <p class="text-sm font-semibold text-slate-800">"In the end, everything turned out fine."</p>
+            </div>
+            <button onclick="speakText('In the end, everything turned out fine.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Opinions Tab (Hidden by default) -->
+        <div id="panel-opinion" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Giving a reasoned opinion</span>
+              <p class="text-sm font-semibold text-slate-800">"From my point of view, it is better to..."</p>
+            </div>
+            <button onclick="speakText('From my point of view, it is better to book in advance.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Partial agreement & polite disagreement</span>
+              <p class="text-sm font-semibold text-slate-800">"I see what you mean, but on the other hand..."</p>
+            </div>
+            <button onclick="speakText('I see what you mean, but on the other hand, it is quite expensive.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Stating a personal preference</span>
+              <p class="text-sm font-semibold text-slate-800">"Personally, I'd rather stay in a quiet hostel."</p>
+            </div>
+            <button onclick="speakText('Personally, I would rather stay in a quiet hostel.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Expressing mild doubt</span>
+              <p class="text-sm font-semibold text-slate-800">"I'm not so sure that's the best idea because..."</p>
+            </div>
+            <button onclick="speakText('I am not so sure that is the best idea because public transport is faster.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Polite Complaints Tab (Hidden by default) -->
+        <div id="panel-polite" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Softening opening</span>
+              <p class="text-sm font-semibold text-slate-800">"Excuse me, I'm afraid there's a slight problem."</p>
+            </div>
+            <button onclick="speakText('Excuse me, I am afraid there is a slight problem.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Explaining expectation vs reality</span>
+              <p class="text-sm font-semibold text-slate-800">"I booked a double room, but this has twin beds."</p>
+            </div>
+            <button onclick="speakText('I booked a double room, but this has twin beds.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Asking for a solution</span>
+              <p class="text-sm font-semibold text-slate-800">"Could you please check if another room is free?"</p>
+            </div>
+            <button onclick="speakText('Could you please check if another room is free?')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Polite firmness</span>
+              <p class="text-sm font-semibold text-slate-800">"I would appreciate it if you could sort this out."</p>
+            </div>
+            <button onclick="speakText('I would appreciate it if you could sort this out.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Buying Time Tab (Hidden by default) -->
+        <div id="panel-buyingTime" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Thinking time phrase</span>
+              <p class="text-sm font-semibold text-slate-800">"That's an interesting question, let me see..."</p>
+            </div>
+            <button onclick="speakText('That is an interesting question, let me see...')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Rephrasing to check meaning</span>
+              <p class="text-sm font-semibold text-slate-800">"So what you mean is, we should leave earlier?"</p>
+            </div>
+            <button onclick="speakText('So what you mean is, we should leave earlier?')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Searching for a specific word</span>
+              <p class="text-sm font-semibold text-slate-800">"What do you call it... it's like a small boat..."</p>
+            </div>
+            <button onclick="speakText('What do you call it... it is like a small boat.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Confirming agreement</span>
+              <p class="text-sm font-semibold text-slate-800">"Exactly! That's just what I was going to say."</p>
+            </div>
+            <button onclick="speakText('Exactly! That is just what I was going to say.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Grammar in Context: Narrative Tenses -->
+    <section id="grammar" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 4: Grammar for Fluency (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">Narrative Tenses: Setting the Scene vs Main Action</h3>
+        <p class="text-sm text-slate-500 mt-0.5">B1 speakers must combine the <strong>Past Continuous</strong> (background) and <strong>Past Simple</strong> (interrupting event).</p>
+      </div>
+
+      <!-- Visual Timeline Graphic -->
+      <div class="bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 text-white rounded-2xl p-6 relative overflow-hidden">
+        <div class="text-xs uppercase font-bold text-teal-400 mb-3 tracking-wider">Grammar Formula at B1:</div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+            <span class="font-bold text-teal-300 block mb-1 text-sm">Background Action (Past Continuous)</span>
+            <p class="text-slate-300 font-mono text-xs">was / were + verb-ing</p>
+            <p class="mt-2 text-slate-200 italic">"While we <strong>were waiting</strong> at the boarding gate..."</p>
+            <p class="text-[11px] text-slate-400 mt-1">Describes the ongoing longer activity in progress.</p>
+          </div>
+          
+          <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+            <span class="font-bold text-amber-300 block mb-1 text-sm">Interrupting Event (Past Simple)</span>
+            <p class="text-slate-300 font-mono text-xs">regular -ed / irregular form</p>
+            <p class="mt-2 text-slate-200 italic">"...suddenly the airline staff <strong>announced</strong> a 4-hour delay."</p>
+            <p class="text-[11px] text-slate-400 mt-1">Short completed action that interrupts the background.</p>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-white/10 text-xs text-slate-300 flex items-center justify-between">
+          <span><i class="fa-solid fa-bolt text-amber-400 mr-1.5"></i> Notice the connector words: <strong>while / as</strong> (+ continuous) vs <strong>when / suddenly</strong> (+ simple).</span>
+        </div>
+      </div>
+
+      <!-- Interactive Tense Challenge (Click to choose) -->
+      <div class="space-y-4">
+        <h4 class="font-bold text-slate-800 text-sm">Interactive Quick Check: Choose the natural B1 sentence:</h4>
+        
+        <div class="space-y-2.5">
+          <!-- Question 1 -->
+          <div class="grammar-question p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <p class="text-xs sm:text-sm font-semibold text-slate-800">
+              1. "While I ____________ along the canal in Venice, my passport ____________ out of my bag!"
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button onclick="handleGrammarChoice(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                was walking / dropped
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                walked / was dropping
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                was walking / was dropping
+              </button>
+            </div>
+            <p class="grammar-explanation hidden text-xs font-semibold mt-1"></p>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="grammar-question p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <p class="text-xs sm:text-sm font-semibold text-slate-800">
+              2. "When we finally arrived at the hotel, the receptionist said they ____________ our reservation because of a computer glitch."
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                were losing
+              </button>
+              <button onclick="handleGrammarChoice(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                had lost (Past Perfect for an earlier event)
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                have lost
+              </button>
+            </div>
+            <p class="grammar-explanation hidden text-xs font-semibold mt-1"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Guided Speaking Roleplay -->
+    <section id="roleplay" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 5: Production & Roleplay (15 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">Real-World Scenario Roleplay Simulator</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Choose a scenario, study your role cards, and start the timer for a natural 3-minute interaction.</p>
+        </div>
+        
+        <!-- Scenario Switcher Dropdown -->
+        <div class="flex items-center space-x-2">
+          <label for="scenarioSelect" class="text-xs font-semibold text-slate-600">Scenario:</label>
+          <select id="scenarioSelect" onchange="loadScenario(this.value)" class="text-xs font-semibold bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <option value="hotel">Scenario 1: Hotel Room Double-Booking</option>
+            <option value="airline">Scenario 2: The Delayed Flight & Lost Suitcase</option>
+            <option value="friends">Scenario 3: Disagreeing on Holiday Budget</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Roleplay Countdown Timer Widget -->
+      <div class="bg-slate-900 text-white p-4 rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-md">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center border border-brand-500/30">
+            <i class="fa-solid fa-stopwatch text-lg"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">Practice Timer</div>
+            <div id="roleplayTimerDisplay" class="text-2xl font-extrabold tracking-widest text-teal-400 font-mono">03:00</div>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-2">
+          <button id="timerStartBtn" onclick="toggleRoleplayTimer()" class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-xs transition shadow-sm">
+            <i class="fa-solid fa-play mr-1"></i> Start 3-Min Conversation
+          </button>
+          <button onclick="resetRoleplayTimer()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium text-xs transition">
+            <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Scenario Cards Container -->
+      <div id="scenarioContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Student A Card -->
+        <div class="bg-teal-50/60 border-2 border-teal-300/80 rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-teal-600 text-white text-xs font-bold uppercase tracking-wider">Role A: Dissatisfied Guest</span>
+            <i class="fa-solid fa-user-tag text-teal-600"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base" id="roleATitle">The Tired Traveler</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed" id="roleADesc">
+              You booked a sea-view quiet room 2 months ago. Upon arrival, the receptionist tells you the hotel is overbooked and offers you a tiny basement room next to the kitchen with no window.
+            </p>
+          </div>
+          
+          <div class="bg-white p-3 rounded-xl border border-teal-200 text-xs space-y-1.5">
+            <span class="font-bold text-teal-800 block mb-1">Your Secret Objectives:</span>
+            <p class="text-slate-700" id="roleAObj1">• Politely refuse the basement room.</p>
+            <p class="text-slate-700" id="roleAObj2">• Demand free breakfast or an upgrade at a partner hotel.</p>
+            <p class="text-slate-700" id="roleAObj3">• Maintain a calm, professional tone using: <em>"I'm afraid that's unacceptable..."</em></p>
+          </div>
+        </div>
+
+        <!-- Student B Card -->
+        <div class="bg-amber-50/60 border-2 border-amber-300/80 rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-amber-600 text-white text-xs font-bold uppercase tracking-wider">Role B: Reception Manager</span>
+            <i class="fa-solid fa-bell-concierge text-amber-600"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base" id="roleBTitle">The Hotel Duty Manager</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed" id="roleBDesc">
+              Due to a burst water pipe on the 4th floor, 10 rooms are uninhabitable. You want to keep the guest calm and avoid negative TripAdvisor reviews, but your hotel is genuinely completely full.
+            </p>
+          </div>
+
+          <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs space-y-1.5">
+            <span class="font-bold text-amber-800 block mb-1">Your Secret Objectives:</span>
+            <p class="text-slate-700" id="roleBObj1">• Apologize sincerely and explain the water pipe emergency.</p>
+            <p class="text-slate-700" id="roleBObj2">• Offer free buffet breakfast and 30% discount voucher.</p>
+            <p class="text-slate-700" id="roleBObj3">• If they insist, call the 4-star boutique hotel 2 blocks away and pay for a taxi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Fluency Challenge & In-Browser Voice Recording -->
+    <section id="challenge" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 6: Fluency Challenge (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">The 60-Second "Just a Minute" Solo Challenge</h3>
+        <p class="text-sm text-slate-500 mt-0.5">Test your B1 spontaneous speaking! Pick a prompt, prepare for 15 seconds, and speak continuously for 60 seconds. You can record yourself directly in the browser.</p>
+      </div>
+
+      <!-- Challenge Box -->
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 space-y-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Your Assigned Topic:</span>
+            <h4 id="challengeTopic" class="text-xl font-bold text-slate-900 mt-1 font-display">
+              "Describe the most memorable trip you have ever taken. Where did you go, who were you with, and why was it special?"
+            </h4>
+          </div>
+          <button onclick="shuffleChallengeTopic()" class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-xs hover:bg-slate-100 transition shadow-sm whitespace-nowrap">
+            <i class="fa-solid fa-arrows-rotate mr-1.5 text-brand-600"></i> New Topic
+          </button>
+        </div>
+
+        <!-- 60s Speaking Timer & Voice Recorder Controls -->
+        <div class="bg-white rounded-xl p-5 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          <!-- Live Countdown -->
+          <div class="flex items-center space-x-4">
+            <div class="relative w-16 h-16 flex items-center justify-center">
+              <svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+                <path class="text-slate-200" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path id="challengeCircleProgress" class="text-brand-500 transition-all duration-1000 ease-linear" stroke-width="3.5" stroke-dasharray="100, 100" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+              </svg>
+              <span id="challengeSeconds" class="absolute text-base font-extrabold text-slate-800 font-mono">60s</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-700" id="challengePhaseLabel">Ready to speak?</div>
+              <div class="text-xs text-slate-500">No long pauses, no repeating words!</div>
+            </div>
+          </div>
+
+          <!-- In-Browser Audio Recorder Buttons -->
+          <div class="flex flex-wrap items-center gap-3">
+            <button id="startChallengeBtn" onclick="start60sChallenge()" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs transition shadow-md shadow-brand-500/20 flex items-center space-x-2">
+              <i class="fa-solid fa-play"></i>
+              <span>Start 60s Challenge</span>
+            </button>
+            <button id="recordVoiceBtn" onclick="toggleAudioRecording()" class="px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition shadow-md shadow-rose-500/20 flex items-center space-x-2">
+              <i class="fa-solid fa-circle-dot" id="recIcon"></i>
+              <span id="recBtnText">Record My Voice</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recorded Audio Playback Container -->
+        <div id="audioPlaybackBox" class="hidden bg-brand-50/70 border border-brand-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center text-xs">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-brand-900 block">Your Recorded Answer:</span>
+              <span class="text-[11px] text-slate-500">Listen back and check your rhythm, speed, and filler words.</span>
+            </div>
+          </div>
+          <audio id="recordedAudioElement" controls class="h-9 w-full sm:w-64"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CEFR B1 Self-Assessment Checklist -->
+    <section id="assessment" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Self-Assessment</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">B1 Speaking Competency Checklist</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Evaluate your speaking performance today according to the European Framework (CEFR B1).</p>
+        </div>
+        <div id="scoreBadge" class="px-3 py-1 bg-slate-100 text-slate-700 rounded-xl text-xs font-bold">
+          Progress: <span id="checkedCount" class="text-brand-600">0</span>/5 Complete
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">1. Narrative Fluency:</strong>
+            <span class="text-slate-500">I was able to describe a past event without long, uncomfortable pauses, using words like <em>while, suddenly,</em> and <em>in the end</em>.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">2. Grammar Accuracy:</strong>
+            <span class="text-slate-500">I correctly contrasted the past continuous (background) and past simple (main event) in my speech.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">3. Politeness & Register:</strong>
+            <span class="text-slate-500">I used polite softening phrases (<em>"I'm afraid...", "Could you please...", "I'd appreciate it if..."</em>) instead of direct commands.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">4. Interaction & Repair:</strong>
+            <span class="text-slate-500">When I didn't know an exact English word, I explained the idea around it or asked for clarification smoothly.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">5. Pronunciation & Intonation:</strong>
+            <span class="text-slate-500">I stressed the key content words and used rising intonation for polite questions.</span>
+          </div>
+        </label>
+      </div>
+
+      <!-- Celebration Box when complete -->
+      <div id="celebrateBox" class="hidden p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm flex items-center space-x-3">
+        <i class="fa-solid fa-trophy text-2xl text-emerald-600"></i>
+        <div>
+          <strong class="block text-emerald-900 font-bold">Excellent work! CEFR B1 milestone reached!</strong>
+          <span>You have demonstrated solid control over the core speaking competencies for travel and storytelling. Keep practicing!</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p class="font-semibold text-slate-700">ESL Speaking Studio • CEFR B1 Intermediate English Curriculum</p>
+      <p>Designed for interactive classroom lessons, 1-on-1 tutoring, or independent speaking practice.</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic JS -->
+  <script>
+    // --- State Variables ---
+    let ttsSpeed = 1.0;
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let isRecording = false;
+
+    // --- Text-to-Speech (TTS) Engine ---
+    function toggleTtsSpeed() {
+      ttsSpeed = ttsSpeed === 1.0 ? 0.75 : (ttsSpeed === 0.75 ? 1.25 : 1.0);
+      document.getElementById('speedLabel').innerText = ttsSpeed + 'x';
+    }
+
+    function speakText(text) {
+      if (!('speechSynthesis' in window)) {
+        alert('Your browser does not support Speech Synthesis.');
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const cleanText = text.replace(/<[^>]*>?/gm, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = ttsSpeed;
+      utterance.lang = 'en-GB'; // British English model for standard ESL
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // --- Warm-Up Question Deck ---
+    const warmupQuestions = [
+      {
+        category: "Travel Experience",
+        icon: "fa-plane-departure",
+        question: "Have you ever missed a bus, train, or flight? What happened, and how did you resolve the situation?",
+        tip: "Use time linkers: 'A few years ago...', 'While I was waiting...', 'Suddenly I realized...', 'Eventually...'",
+        sample: "Yes, definitely! Two summers ago, I was travelling to Barcelona by train. While I was waiting at the station, I was reading a book and didn't notice the departure platform had changed. When I finally arrived at the gate, the doors were already locked! At first, I felt panic, but I immediately went to the customer desk. Fortunately, the staff were sympathetic and transferred my ticket to the next departure without any extra fee."
+      },
+      {
+        category: "Unexpected Situations",
+        icon: "fa-triangle-exclamation",
+        question: "What is the worst hotel, hostel, or accommodation you have ever stayed in? What went wrong?",
+        tip: "Use descriptive adjectives: 'noisy', 'unbearable', 'cramped', 'freezing cold', 'filthy'.",
+        sample: "I once stayed at a hostel in London where the heating broke down in December! On top of that, there was a loud street market right beneath our window starting at 5:00 AM. I politely complained to the owner in the morning, and they gave us extra blankets and a 50% discount on our stay."
+      },
+      {
+        category: "Culture & Communication",
+        icon: "fa-earth-europe",
+        question: "Have you ever had a misunderstanding with a local person while abroad because of language or customs?",
+        tip: "Practice buying time: 'Well, to be honest...', 'As far as I remember...', 'It was quite funny because...'",
+        sample: "A few years ago in Italy, I tried to order food using hand gestures because I couldn't speak Italian. I accidentally ordered three large pizzas instead of one slice! My friends and I were laughing so much, but we ended up sharing the pizza with people at the next table."
+      },
+      {
+        category: "Planning & Preferences",
+        icon: "fa-suitcase-rolling",
+        question: "Do you prefer detailed planning for your holidays, or do you prefer spontaneous adventure? Why?",
+        tip: "Express opinions & contrast: 'In my opinion...', 'I'd rather...', 'Whereas other people prefer...'",
+        sample: "Personally, I prefer having a rough plan rather than scheduling every hour. While it is good to book flights and hotels early to save money, leaving your afternoons free gives you the freedom to discover quiet cafes and talk to local people."
+      },
+      {
+        category: "Problem Solving",
+        icon: "fa-compass",
+        question: "Imagine you lost your phone and wallet in an unfamiliar foreign city. What would your first three steps be?",
+        tip: "Use conditionals & sequence: 'First of all, I would...', 'After that, I'd try to...', 'My next step would be...'",
+        sample: "If that happened to me, first of all, I would find a police station or tourist information office to report the lost documents. After that, I would ask to use a computer or phone to block my bank cards immediately. Finally, I would contact my embassy or family for emergency assistance."
+      }
+    ];
+
+    let currentWarmupIndex = 0;
+
+    function drawWarmupCard() {
+      currentWarmupIndex = (currentWarmupIndex + 1) % warmupQuestions.length;
+      const data = warmupQuestions[currentWarmupIndex];
+      document.getElementById('warmupCategory').innerHTML = `<i class="fa-solid ${data.icon} mr-1.5"></i> ${data.category}`;
+      document.getElementById('warmupIndex').innerText = `Question ${currentWarmupIndex + 1} of ${warmupQuestions.length}`;
+      document.getElementById('warmupQuestion').innerText = `"${data.question}"`;
+      document.getElementById('warmupTip').innerHTML = `• ${data.tip}`;
+      document.getElementById('warmupSampleAnswer').innerText = `"${data.sample}"`;
+      
+      // Hide sample if open
+      document.getElementById('warmupSampleBox').classList.add('hidden');
+      document.getElementById('sampleToggleText').innerText = "Show Model B1 Answer";
+    }
+
+    function toggleWarmupSample() {
+      const box = document.getElementById('warmupSampleBox');
+      const text = document.getElementById('sampleToggleText');
+      if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        text.innerText = "Hide Model Answer";
+      } else {
+        box.classList.add('hidden');
+        text.innerText = "Show Model B1 Answer";
+      }
+    }
+
+    // --- Vocabulary Flashcard Toggle ---
+    function toggleVocabFlip(card) {
+      const example = card.querySelector('.vocab-example');
+      if (example.classList.contains('hidden')) {
+        example.classList.remove('hidden');
+      } else {
+        example.classList.add('hidden');
+      }
+    }
+
+    // --- Vocab Quick Quiz ---
+    function checkVocabQuiz(btn, isCorrect) {
+      const feedback = document.getElementById('vocabQuizFeedback');
+      feedback.classList.remove('hidden');
+      if (isCorrect) {
+        feedback.className = "mt-2.5 text-xs font-semibold text-emerald-600";
+        feedback.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Correct! "Compensation" refers to payment or benefits given to make up for a problem or cancellation.';
+      } else {
+        feedback.className = "mt-2.5 text-xs font-semibold text-rose-600";
+        feedback.innerHTML = '<i class="fa-solid fa-circle-xmark mr-1"></i> Not quite. We receive <strong>compensation</strong> or refunds for cancelled journeys.';
+      }
+    }
+
+    // --- Functional Language Tabs ---
+    function switchPhraseTab(tabKey) {
+      // Buttons
+      document.querySelectorAll('.phrase-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById(`tabBtn-${tabKey}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+        activeBtn.classList.remove('bg-slate-100', 'text-slate-700');
+      }
+
+      // Panels
+      document.querySelectorAll('.phrase-panel').forEach(p => p.classList.add('hidden'));
+      const activePanel = document.getElementById(`panel-${tabKey}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+    }
+
+    // --- Grammar Quiz Feedback ---
+    function handleGrammarChoice(btn, isCorrect) {
+      const parent = btn.closest('.grammar-question');
+      const explanation = parent.querySelector('.grammar-explanation');
+      explanation.classList.remove('hidden');
+
+      if (isCorrect) {
+        explanation.className = "grammar-explanation text-xs font-semibold mt-1 text-emerald-600";
+        explanation.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Correct! Excellent grasp of B1 narrative aspect!';
+      } else {
+        explanation.className = "grammar-explanation text-xs font-semibold mt-1 text-rose-600";
+        explanation.innerHTML = '<i class="fa-solid fa-xmark mr-1"></i> Try again: remember that ongoing background actions require Past Continuous (was/were + -ing).';
+      }
+    }
+
+    // --- Roleplay Scenarios Data ---
+    const scenarios = {
+      hotel: {
+        roleA: {
+          title: "The Tired Traveler",
+          desc: "You booked a sea-view quiet room 2 months ago. Upon arrival, the receptionist tells you the hotel is overbooked and offers you a tiny basement room next to the kitchen with no window.",
+          obj: [
+            "• Politely refuse the basement room.",
+            "• Demand free breakfast or an upgrade at a partner hotel.",
+            "• Maintain a calm, professional tone using: \"I'm afraid that's unacceptable...\""
+          ]
+        },
+        roleB: {
+          title: "The Hotel Duty Manager",
+          desc: "Due to a burst water pipe on the 4th floor, 10 rooms are uninhabitable. You want to keep the guest calm and avoid negative TripAdvisor reviews, but your hotel is genuinely completely full.",
+          obj: [
+            "• Apologize sincerely and explain the water pipe emergency.",
+            "• Offer free buffet breakfast and 30% discount voucher.",
+            "• If they insist, call the 4-star boutique hotel 2 blocks away and pay for a taxi."
+          ]
+        }
+      },
+      airline: {
+        roleA: {
+          title: "Stranded Passenger",
+          desc: "Your flight was delayed by 5 hours, causing you to miss your sister's wedding rehearsal dinner. Now at baggage reclaim, your suitcase hasn't arrived.",
+          obj: [
+            "• File a report for your missing suitcase.",
+            "• Ask about emergency compensation for buying clean clothes.",
+            "• Request written proof of the 5-hour delay for your travel insurance."
+          ]
+        },
+        roleB: {
+          title: "Airline Customer Care Agent",
+          desc: "Severe thunderstorms in Munich caused 40 delayed flights today. You have a long queue of angry passengers, but you want to be helpful and efficient.",
+          obj: [
+            "• Validate the passenger's luggage tag and take down their hotel address.",
+            "• Provide an overnight emergency toiletries kit.",
+            "• Guide them to fill out the online delay compensation claim form."
+          ]
+        }
+      },
+      friends: {
+        roleA: {
+          title: "Budget-Conscious Backpacker",
+          desc: "You and your best friend are planning a 4-day weekend trip to Amsterdam. You have a strict budget of €250 and want to stay in a youth hostel and cook your own meals.",
+          obj: [
+            "• Explain why you need to save money right now.",
+            "• Suggest renting bicycles and doing free walking tours.",
+            "• Find a compromise where you eat one nice meal together."
+          ]
+        },
+        roleB: {
+          title: "Luxury & Comfort Lover",
+          desc: "You work full-time and believe holidays should be relaxing. You want a private hotel room with air-conditioning and want to eat in authentic restaurants every night.",
+          obj: [
+            "• Explain why hostels make you stressed and tired.",
+            "• Propose sharing a twin private room in a mid-range boutique hotel.",
+            "• Negotiate activities that satisfy both of your styles."
+          ]
+        }
+      }
+    };
+
+    function loadScenario(key) {
+      const sc = scenarios[key];
+      if (!sc) return;
+
+      document.getElementById('roleATitle').innerText = sc.roleA.title;
+      document.getElementById('roleADesc').innerText = sc.roleA.desc;
+      document.getElementById('roleAObj1').innerText = sc.roleA.obj[0];
+      document.getElementById('roleAObj2').innerText = sc.roleA.obj[1];
+      document.getElementById('roleAObj3').innerText = sc.roleA.obj[2];
+
+      document.getElementById('roleBTitle').innerText = sc.roleB.title;
+      document.getElementById('roleBDesc').innerText = sc.roleB.desc;
+      document.getElementById('roleBObj1').innerText = sc.roleB.obj[0];
+      document.getElementById('roleBObj2').innerText = sc.roleB.obj[1];
+      document.getElementById('roleBObj3').innerText = sc.roleB.obj[2];
+    }
+
+    // --- Roleplay Timer ---
+    let roleplaySeconds = 180;
+    let roleplayInterval = null;
+
+    function toggleRoleplayTimer() {
+      const btn = document.getElementById('timerStartBtn');
+      if (roleplayInterval) {
+        clearInterval(roleplayInterval);
+        roleplayInterval = null;
+        btn.innerHTML = '<i class="fa-solid fa-play mr-1"></i> Resume Conversation';
+      } else {
+        roleplayInterval = setInterval(() => {
+          if (roleplaySeconds <= 0) {
+            clearInterval(roleplayInterval);
+            roleplayInterval = null;
+            btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Time Up!';
+            speakText("Time is up! Great job finishing the roleplay.");
+            return;
+          }
+          roleplaySeconds--;
+          updateRoleplayTimerDisplay();
+        }, 1000);
+        btn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> Pause Timer';
+      }
+    }
+
+    function resetRoleplayTimer() {
+      clearInterval(roleplayInterval);
+      roleplayInterval = null;
+      roleplaySeconds = 180;
+      updateRoleplayTimerDisplay();
+      document.getElementById('timerStartBtn').innerHTML = '<i class="fa-solid fa-play mr-1"></i> Start 3-Min Conversation';
+    }
+
+    function updateRoleplayTimerDisplay() {
+      const m = Math.floor(roleplaySeconds / 60);
+      const s = roleplaySeconds % 60;
+      document.getElementById('roleplayTimerDisplay').innerText = 
+        `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
+
+    // --- 60-Second Challenge ---
+    const challengeTopics = [
+      "Describe the most memorable trip you have ever taken. Where did you go, who were you with, and why was it special?",
+      "Talk about a time you had to solve a difficult problem while travelling or commuting.",
+      "If you could travel anywhere in the world next week with all expenses paid, where would you choose and what would you do?",
+      "Describe a city or country that completely surprised you when you visited it.",
+      "Do you think tourism brings more benefits or problems to historical cities? Give reasons for your opinion."
+    ];
+
+    let challengeIndex = 0;
+    let challengeSeconds = 60;
+    let challengeTimer = null;
+
+    function shuffleChallengeTopic() {
+      challengeIndex = (challengeIndex + 1) % challengeTopics.length;
+      document.getElementById('challengeTopic').innerText = `"${challengeTopics[challengeIndex]}"`;
+    }
+
+    function start60sChallenge() {
+      if (challengeTimer) {
+        clearInterval(challengeTimer);
+      }
+      challengeSeconds = 60;
+      const circle = document.getElementById('challengeCircleProgress');
+      const label = document.getElementById('challengeSeconds');
+      const phase = document.getElementById('challengePhaseLabel');
+      
+      phase.innerText = "Speaking now! Keep going...";
+      phase.className = "text-xs font-bold text-brand-600";
+
+      challengeTimer = setInterval(() => {
+        challengeSeconds--;
+        label.innerText = challengeSeconds + 's';
+        
+        const percent = (challengeSeconds / 60) * 100;
+        circle.setAttribute('stroke-dasharray', `${percent}, 100`);
+
+        if (challengeSeconds <= 0) {
+          clearInterval(challengeTimer);
+          challengeTimer = null;
+          phase.innerText = "Challenge Complete! Awesome fluency!";
+          phase.className = "text-xs font-bold text-emerald-600";
+          speakText("Time is up! Outstanding effort!");
+        }
+      }, 1000);
+    }
+
+    // --- In-Browser Audio Recording API ---
+    async function toggleAudioRecording() {
+      const btn = document.getElementById('recordVoiceBtn');
+      const recIcon = document.getElementById('recIcon');
+      const text = document.getElementById('recBtnText');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          mediaRecorder = new MediaRecorder(stream);
+          audioChunks = [];
+
+          mediaRecorder.ondataavailable = event => {
+            audioChunks.push(event.data);
+          };
+
+          mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+            const audioUrl = URL.createObjectURL(audioBlob);
+            const player = document.getElementById('recordedAudioElement');
+            player.src = audioUrl;
+            document.getElementById('audioPlaybackBox').classList.remove('hidden');
+          };
+
+          mediaRecorder.start();
+          isRecording = true;
+          recIcon.className = "fa-solid fa-stop";
+          text.innerText = "Stop Recording";
+          btn.className = "px-4 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs transition shadow-md flex items-center space-x-2 animate-pulse";
+        } catch (err) {
+          alert('Microphone access was denied or is not supported in your browser.');
+        }
+      } else {
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+        isRecording = false;
+        recIcon.className = "fa-solid fa-circle-dot";
+        text.innerText = "Record Again";
+        btn.className = "px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition shadow-md shadow-rose-500/20 flex items-center space-x-2";
+      }
+    }
+
+    // --- Checklist & Evaluation ---
+    function updateChecklist() {
+      const items = document.querySelectorAll('.checklist-item');
+      let count = 0;
+      items.forEach(item => {
+        if (item.checked) count++;
+      });
+      document.getElementById('checkedCount').innerText = count;
+
+      const celebrate = document.getElementById('celebrateBox');
+      if (count === items.length) {
+        celebrate.classList.remove('hidden');
+      } else {
+        celebrate.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

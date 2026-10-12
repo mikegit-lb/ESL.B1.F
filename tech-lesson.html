@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B1 English Speaking Masterclass | Digital Life & Social Media</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              200: '#e9d5ff',
+              500: '#a855f7',
+              600: '#9333ea',
+              700: '#7e22ce',
+              800: '#6b21a8',
+            },
+            cyanAccent: {
+              500: '#06b6d4',
+              600: '#0891b2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .perspective { perspective: 1000px; }
+    .transform-style-3d { transform-style: preserve-3d; }
+    .backface-hidden { backface-visibility: hidden; }
+    .rotate-y-180 { transform: rotateY(180deg); }
+    
+    @media print {
+      header, button, select, #ttsSpeedBtn, #scenarioSelect, .no-print, .lesson-switcher-banner {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .vocab-example, #warmupSampleBox, #panel-habits, #panel-opinions, #panel-proscons, #panel-generalizations {
+        display: block !important;
+      }
+      section {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        margin-bottom: 1.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-200">
+
+  <!-- Curriculum Switcher Banner -->
+  <aside class="lesson-switcher-banner bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2" aria-label="Curriculum units navigation">
+    <div class="flex items-center space-x-2">
+      <span class="px-2 py-0.5 rounded bg-brand-600 text-white font-bold text-[10px] uppercase tracking-wider">B1 Curriculum</span>
+      <span>Select Module:</span>
+      <a href="index.html" class="text-slate-300 hover:text-white underline ml-1">Unit 1: Travel</a>
+      <span class="text-slate-600">•</span>
+      <a href="career-lesson.html" class="text-slate-300 hover:text-white underline">Unit 2: Workplace</a>
+      <span class="text-slate-600">•</span>
+      <span class="text-purple-400 font-bold">Unit 3: Digital Life</span>
+      <span class="text-slate-600">•</span>
+      <a href="food-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 4: Food & Dining</a>
+      <span class="text-slate-600">•</span>
+      <a href="environment-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 5: Green Living</a>
+      <span class="text-slate-600">•</span>
+      <a href="health-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 6: Health & Fitness</a>
+      <span class="text-slate-600">•</span>
+      <a href="finance-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 7: Money & Spending</a>
+      <span class="text-slate-600">•</span>
+      <a href="entertainment-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 8: Entertainment</a>
+      <span class="text-slate-600">•</span>
+      <a href="housing-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 9: Housing</a>
+      <span class="text-slate-600">•</span>
+      <a href="education-lesson.html" class="text-slate-300 hover:text-white underline ml-1">Unit 10: Education</a>
+    </div>
+    <div class="flex items-center space-x-3 text-[11px] text-slate-400">
+      <span><i class="fa-solid fa-graduation-cap text-purple-400 mr-1"></i> CEFR B1 Spoken Production & Interaction</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <i class="fa-solid fa-mobile-screen text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200">CEFR B1 Intermediate</span>
+          <h1 class="text-base font-bold text-slate-900 leading-tight">ESL Speaking Studio</h1>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-600">
+        <a href="#warmup" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">1. Warm-Up</a>
+        <a href="#vocabulary" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">2. Tech Vocab</a>
+        <a href="#functional" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">3. Debating Phrases</a>
+        <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Habits & Future</a>
+        <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Digital Roleplay</a>
+        <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Fluency Challenge</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2">
+        <button id="ttsSpeedBtn" onclick="toggleTtsSpeed()" class="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm flex items-center space-x-1.5" title="Switch between normal and slow speech speed">
+          <i class="fa-solid fa-gauge-high text-brand-600"></i>
+          <span>Speed: <span id="speedLabel" class="text-brand-700 font-bold">1.0x</span></span>
+        </button>
+        <button onclick="window.print()" class="text-xs px-3 py-1.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-sm flex items-center space-x-1.5">
+          <i class="fa-solid fa-print"></i>
+          <span class="hidden sm:inline">Handout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-purple-50/70 via-white to-slate-50 py-10 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-100/80 border border-purple-200 text-purple-800 text-xs font-semibold">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Unit 3: Digital Life, Social Media & Screen Time</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
+            Speaking Out Loud: <span class="text-brand-600">Surviving Screens, Online Dilemmas & Debating AI</span>
+          </h2>
+          <p class="text-slate-600 text-base max-w-2xl leading-relaxed">
+            Gain the spoken fluency to compare digital habits, debate the effects of social media, weigh pros and cons of artificial intelligence, and negotiate household screen time at the B1 intermediate level.
+          </p>
+        </div>
+
+        <!-- Lesson Info Badge Card -->
+        <div class="w-full md:w-auto min-w-[260px] bg-white p-4 rounded-2xl border border-slate-200/80 shadow-md shadow-slate-200/50 space-y-3">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+            <span><i class="fa-regular fa-clock mr-1 text-brand-500"></i> Approx. 45-60 min</span>
+            <span class="text-brand-600 font-semibold"><i class="fa-solid fa-user-group mr-1"></i> Pairs or Solo</span>
+          </div>
+          <div class="border-t border-slate-100 pt-2.5 text-xs text-slate-700 space-y-1.5">
+            <div class="font-bold text-slate-900 uppercase tracking-wider text-[10px] text-slate-400">CEFR B1 Can-Do Goals</div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Describe past habits with "used to"</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Weigh pros & cons of modern technology</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+              <span>Express probability about future trends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+
+    <!-- 1. Warm-Up: Digital Life Dilemma Roulette -->
+    <section id="warmup" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 1: Lead-In (5-8 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">Icebreaker: Digital Life Dilemmas</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Click the button to draw a modern technology question and discuss it aloud with a partner or solo.</p>
+        </div>
+        <button onclick="drawWarmupCard()" class="px-4 py-2 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-700 font-semibold text-sm border border-brand-200 flex items-center space-x-2 transition shadow-sm active:scale-95">
+          <i class="fa-solid fa-shuffle"></i>
+          <span>Draw Random Dilemma</span>
+        </button>
+      </div>
+
+      <!-- Interactive Question Card Display -->
+      <div id="warmupCardBox" class="bg-gradient-to-br from-slate-900 to-purple-950 text-white rounded-2xl p-6 sm:p-8 shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-between text-xs text-purple-300 font-medium tracking-wide mb-3">
+          <span id="warmupCategory"><i class="fa-solid fa-mobile-screen-button mr-1.5"></i> Screen Habits</span>
+          <span id="warmupIndex">Question 1 of 5</span>
+        </div>
+        <h4 id="warmupQuestion" class="text-xl sm:text-2xl font-semibold leading-relaxed mb-6 font-display">
+          "Could you survive a full 7-day 'digital detox' with zero smartphone or social media access? What would you find most difficult?"
+        </h4>
+        
+        <!-- Helpful B1 Thinking Prompts -->
+        <div class="bg-white/10 rounded-xl p-4 text-xs sm:text-sm text-slate-200 backdrop-blur-sm space-y-1 border border-white/10">
+          <span class="font-bold text-amber-300 block mb-1"><i class="fa-regular fa-lightbulb mr-1"></i> B1 Speaking Advice:</span>
+          <p id="warmupTip">• Use conditional & habit structures: <em>"If I had to disconnect...", "I am so used to checking...", "I think the hardest part would be..."</em></p>
+        </div>
+
+        <!-- Audio Model & Sample Toggle -->
+        <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex items-center space-x-2">
+            <button onclick="speakText(document.getElementById('warmupQuestion').innerText)" class="px-3 py-1.5 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/30 font-medium transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen to Model Pronunciation</span>
+            </button>
+            <button onclick="toggleWarmupSample()" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/10 font-medium transition">
+              <i class="fa-regular fa-eye mr-1"></i> <span id="sampleToggleText">Show Model B1 Answer</span>
+            </button>
+          </div>
+          <span class="text-slate-400">Aim for 30–45 seconds of fluent justification.</span>
+        </div>
+
+        <!-- Hidden Model Answer Panel -->
+        <div id="warmupSampleBox" class="hidden mt-4 pt-4 border-t border-white/10 text-sm text-slate-200 bg-white/5 p-4 rounded-xl">
+          <p class="font-semibold text-purple-300 mb-1">Example Model Answer (B1 Target):</p>
+          <p id="warmupSampleAnswer" class="italic text-slate-300 leading-relaxed">
+            "To be honest, I think it would be a huge challenge for me at first. I am so used to using GPS maps for travelling and messaging my friends every morning. However, after the first two days, it would probably feel quite refreshing and peaceful. I would definitely read more books and go for long walks outdoors without checking notifications."
+          </p>
+          <div class="mt-2 text-xs text-amber-300 flex items-center space-x-2">
+            <button onclick="speakText(document.getElementById('warmupSampleAnswer').innerText)" class="text-purple-300 underline hover:text-purple-200">
+              <i class="fa-solid fa-play text-[10px] mr-1"></i> Play sample answer audio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Target Vocabulary & Digital Collocations -->
+    <section id="vocabulary" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 2: Lexical Input (10 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">High-Frequency Digital Collocations</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Click the audio icon to practice pronunciation. Click any card to show/hide the example sentence in context.</p>
+        </div>
+        <div class="text-xs bg-slate-100 px-3 py-1.5 rounded-lg text-slate-600 font-semibold flex items-center space-x-1">
+          <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Click card to toggle example
+        </div>
+      </div>
+
+      <!-- Flashcards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-brand-100 text-brand-700">Modern Verb / Noun</span>
+            <button onclick="event.stopPropagation(); speakText('to doomscroll on social media')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Doomscrolling</h4>
+          <p class="text-xs text-slate-500 mt-1">Constantly scrolling through negative, depressing news stories or feeds on your phone.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "I used to spend half an hour doomscrolling in bed before sleeping, which gave me insomnia."
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-cyan-100 text-cyan-800">Noun Collocation</span>
+            <button onclick="event.stopPropagation(); speakText('screen time limit')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Screen time limit</h4>
+          <p class="text-xs text-slate-500 mt-1">A fixed maximum number of hours spent using digital screens each day.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "I set a daily two-hour screen time limit on social media apps to help me focus on studying."
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Noun Phrase</span>
+            <button onclick="event.stopPropagation(); speakText('take a digital detox')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Digital detox</h4>
+          <p class="text-xs text-slate-500 mt-1">A period of time during which a person intentionally refrains from using digital devices.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "Every summer camping weekend, our family does a complete digital detox without any Wi-Fi."
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Phrasal Verb</span>
+            <button onclick="event.stopPropagation(); speakText('to unplug and switch off')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Unplug / Switch off</h4>
+          <p class="text-xs text-slate-500 mt-1">To disconnect from technology, work emails, and social media to unwind and relax.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "It is healthy to unplug on Sunday evenings so you can recharge for the coming week."
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Noun Collocation</span>
+            <button onclick="event.stopPropagation(); speakText('targeted advertising')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Targeted advertising</h4>
+          <p class="text-xs text-slate-500 mt-1">Online adverts customized to match your search history, preferences, and personal data.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "I talked about running shoes once, and suddenly all my social feeds were flooded with targeted advertising."
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="vocab-card bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:border-brand-500 hover:shadow-md transition-all cursor-pointer group" onclick="toggleVocabFlip(this)">
+          <div class="flex items-start justify-between">
+            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">Noun Phrase</span>
+            <button onclick="event.stopPropagation(); speakText('cyberbullying and privacy settings')" class="w-8 h-8 rounded-full bg-white text-brand-600 shadow-sm border border-slate-200 hover:bg-brand-50 flex items-center justify-center transition" title="Listen">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mt-2">Online privacy & settings</h4>
+          <p class="text-xs text-slate-500 mt-1">Controls that determine who can view your profile, posts, location, and photos.</p>
+          <div class="vocab-example hidden mt-3 pt-3 border-t border-slate-200 text-xs text-brand-800 bg-brand-50/70 p-2.5 rounded-lg font-medium">
+            "Schools should teach teenagers how to configure strict privacy settings on their social media accounts."
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Interactive Vocab Check Quiz -->
+      <div class="bg-purple-50/60 rounded-2xl p-5 border border-purple-200">
+        <div class="flex items-center space-x-2 text-purple-900 font-bold text-sm mb-3">
+          <i class="fa-solid fa-circle-question text-brand-600"></i>
+          <span>Check Your Understanding: Fill in the Blank</span>
+        </div>
+        <p class="text-xs text-slate-600 mb-3">
+          "When you intentionally stop checking your phone or computer for a weekend to rest your brain, you are taking a <span class="font-bold underline text-brand-700">_________</span>."
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <button onclick="checkVocabQuiz(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">doomscroll</button>
+          <button onclick="checkVocabQuiz(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">digital detox</button>
+          <button onclick="checkVocabQuiz(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-medium text-slate-700 hover:bg-slate-50">targeted ad</button>
+        </div>
+        <div id="vocabQuizFeedback" class="hidden mt-2.5 text-xs font-semibold"></div>
+      </div>
+    </section>
+
+    <!-- 3. Debating & Discussion Functional Language -->
+    <section id="functional" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 3: Debating Toolkit (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">Debating Tech & Social Issues Toolkit</h3>
+        <p class="text-sm text-slate-500 mt-0.5">Essential functional language to weigh pros and cons, make generalizations, and state strong opinions naturally.</p>
+      </div>
+
+      <!-- Tabbed Categories -->
+      <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-3" id="phraseTabs">
+        <button onclick="switchPhraseTab('proscons')" id="tabBtn-proscons" class="phrase-tab-btn active px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-brand-600 text-white shadow-sm transition">
+          <i class="fa-solid fa-scale-balanced mr-1.5"></i> Weighing Pros & Cons
+        </button>
+        <button onclick="switchPhraseTab('generalizations')" id="tabBtn-generalizations" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-globe mr-1.5"></i> Making Generalizations
+        </button>
+        <button onclick="switchPhraseTab('opinions')" id="tabBtn-opinions" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-thumbs-up mr-1.5"></i> Expressing Strong Views
+        </button>
+        <button onclick="switchPhraseTab('habits')" id="tabBtn-habits" class="phrase-tab-btn px-3.5 py-1.5 rounded-xl font-semibold text-xs bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-clock-rotate-left mr-1.5"></i> Past vs Present Habits
+        </button>
+      </div>
+
+      <!-- Tab Content Panels -->
+      <div id="phrasePanels" class="space-y-3">
+        <!-- Pros and Cons Tab -->
+        <div id="panel-proscons" class="phrase-panel grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Balancing two perspectives</span>
+              <p class="text-sm font-semibold text-slate-800">"While it is undeniably convenient, one major drawback is..."</p>
+            </div>
+            <button onclick="speakText('While it is undeniably convenient, one major drawback is lack of privacy.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Comparing benefits vs risks</span>
+              <p class="text-sm font-semibold text-slate-800">"The advantages far outweigh the potential disadvantages."</p>
+            </div>
+            <button onclick="speakText('The advantages far outweigh the potential disadvantages.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Introducing an unexpected side effect</span>
+              <p class="text-sm font-semibold text-slate-800">"On the flip side, people often forget that..."</p>
+            </div>
+            <button onclick="speakText('On the flip side, people often forget that real conversations require patience.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Concluding a balanced argument</span>
+              <p class="text-sm font-semibold text-slate-800">"All things considered, moderation is key."</p>
+            </div>
+            <button onclick="speakText('All things considered, moderation is key.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Generalizations Tab (Hidden by default) -->
+        <div id="panel-generalizations" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Broad societal trend</span>
+              <p class="text-sm font-semibold text-slate-800">"Generally speaking, teenagers tend to spend more time..."</p>
+            </div>
+            <button onclick="speakText('Generally speaking, teenagers tend to spend more time on video platforms.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Describing typical behavior</span>
+              <p class="text-sm font-semibold text-slate-800">"In the vast majority of cases, people rely on..."</p>
+            </div>
+            <button onclick="speakText('In the vast majority of cases, people rely on smartphones for directions.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Softening a statement</span>
+              <p class="text-sm font-semibold text-slate-800">"By and large, digital tools have made life easier."</p>
+            </div>
+            <button onclick="speakText('By and large, digital tools have made life easier.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Allowing for exceptions</span>
+              <p class="text-sm font-semibold text-slate-800">"With a few notable exceptions, most apps..."</p>
+            </div>
+            <button onclick="speakText('With a few notable exceptions, most apps collect user data.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Strong Views Tab (Hidden by default) -->
+        <div id="panel-opinions" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Unwavering conviction</span>
+              <p class="text-sm font-semibold text-slate-800">"I am firmly convinced that AI will transform education."</p>
+            </div>
+            <button onclick="speakText('I am firmly convinced that AI will transform education.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Denying doubt</span>
+              <p class="text-sm font-semibold text-slate-800">"There is no doubt in my mind that screen addiction is real."</p>
+            </div>
+            <button onclick="speakText('There is no doubt in my mind that screen addiction is real.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Refuting an opponent</span>
+              <p class="text-sm font-semibold text-slate-800">"I completely reject the idea that social media is harmless."</p>
+            </div>
+            <button onclick="speakText('I completely reject the idea that social media is harmless.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Calling for action</span>
+              <p class="text-sm font-semibold text-slate-800">"It is high time that tech companies protected children."</p>
+            </div>
+            <button onclick="speakText('It is high time that tech companies protected children.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+
+        <!-- Habits Tab (Hidden by default) -->
+        <div id="panel-habits" class="phrase-panel hidden grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Past discontinued habit</span>
+              <p class="text-sm font-semibold text-slate-800">"Ten years ago, people used to read printed newspapers."</p>
+            </div>
+            <button onclick="speakText('Ten years ago, people used to read printed newspapers.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Familiar ongoing habit</span>
+              <p class="text-sm font-semibold text-slate-800">"Nowadays, I am used to buying everything online."</p>
+            </div>
+            <button onclick="speakText('Nowadays, I am used to buying everything online.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Process of adaptation</span>
+              <p class="text-sm font-semibold text-slate-800">"It took me a while to get used to typing on a touch screen."</p>
+            </div>
+            <button onclick="speakText('It took me a while to get used to typing on a touch screen.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-200/80 hover:bg-brand-50/50 transition">
+            <div>
+              <span class="text-xs font-bold text-brand-600 block">Contrasting past & present</span>
+              <p class="text-sm font-semibold text-slate-800">"We used to remember phone numbers; now our phones do it."</p>
+            </div>
+            <button onclick="speakText('We used to remember phone numbers; now our phones do it for us.')" class="text-slate-400 hover:text-brand-600 p-2"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Grammar in Context: Habits & Future Probability -->
+    <section id="grammar" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 4: Grammar for Fluency (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">Mastering "Used To" vs "Be Used To" & Future Probability</h3>
+        <p class="text-sm text-slate-500 mt-0.5">Crucial B1 grammar: distinguishing between past discontinued habits and current familiarity.</p>
+      </div>
+
+      <!-- Comparison Chart -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+        <div class="bg-purple-50 border border-purple-200 p-4 rounded-2xl">
+          <span class="font-bold text-purple-900 block mb-1 text-sm"><i class="fa-solid fa-clock-rotate-left text-brand-600 mr-1"></i> used to + infinitive</span>
+          <p class="font-bold text-purple-700 text-xs">Past Habit (No longer true today)</p>
+          <p class="mt-2 text-slate-700 italic">"I <strong>used to play</strong> video games every day when I was a teenager."</p>
+          <p class="text-[11px] text-slate-500 mt-1">Refers strictly to a past habit or past state that has ceased.</p>
+        </div>
+
+        <div class="bg-cyan-50 border border-cyan-200 p-4 rounded-2xl">
+          <span class="font-bold text-cyan-900 block mb-1 text-sm"><i class="fa-solid fa-repeat text-cyan-600 mr-1"></i> be / get used to + verb-ing / noun</span>
+          <p class="font-bold text-cyan-700 text-xs">Familiarity (Accustomed to something)</p>
+          <p class="mt-2 text-slate-700 italic">"I <strong>am used to receiving</strong> dozens of notifications daily."</p>
+          <p class="text-[11px] text-slate-500 mt-1">It is normal, comfortable, and not strange to you.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Quick Check -->
+      <div class="space-y-4 pt-2">
+        <h4 class="font-bold text-slate-800 text-sm">Interactive Quick Check: Select the grammatically correct B1 choice:</h4>
+        
+        <div class="space-y-2.5">
+          <!-- Question 1 -->
+          <div class="grammar-question p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <p class="text-xs sm:text-sm font-semibold text-slate-800">
+              1. "When I was in secondary school, I ____________ have a smartphone, so we talked face-to-face during breaks."
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                wasn't used to
+              </button>
+              <button onclick="handleGrammarChoice(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                didn't use to (past habit/state)
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                am not used to
+              </button>
+            </div>
+            <p class="grammar-explanation hidden text-xs font-semibold mt-1"></p>
+          </div>
+
+          <!-- Question 2 (Future probability) -->
+          <div class="grammar-question p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-2">
+            <p class="text-xs sm:text-sm font-semibold text-slate-800">
+              2. "Experts believe that virtual reality headsets ____________ become much cheaper in the next five years."
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button onclick="handleGrammarChoice(this, true)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                are likely to (high probability)
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                used to
+              </button>
+              <button onclick="handleGrammarChoice(this, false)" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 font-medium hover:bg-slate-100">
+                are used to
+              </button>
+            </div>
+            <p class="grammar-explanation hidden text-xs font-semibold mt-1"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Guided Speaking Roleplay Simulator -->
+    <section id="roleplay" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 5: Production & Roleplay (15 Mins)</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">Digital Dilemmas Negotiation Simulator</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Select a real-world scenario, read your role instructions, and negotiate a solution during the 3-minute timer.</p>
+        </div>
+        
+        <!-- Scenario Switcher -->
+        <div class="flex items-center space-x-2">
+          <label for="scenarioSelect" class="text-xs font-semibold text-slate-600">Scenario:</label>
+          <select id="scenarioSelect" onchange="loadScenario(this.value)" class="text-xs font-semibold bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <option value="screentime">Scenario 1: Parent & Teen Screen Time Rules</option>
+            <option value="techsupport">Scenario 2: Faulty Tablet & Angry Customer</option>
+            <option value="digitaldinner">Scenario 3: No-Phones Policy at Dinner</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Practice Timer -->
+      <div class="bg-slate-900 text-white p-4 rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-md">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-purple-400 flex items-center justify-center border border-brand-500/30">
+            <i class="fa-solid fa-stopwatch text-lg"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">Roleplay Timer</div>
+            <div id="roleplayTimerDisplay" class="text-2xl font-extrabold tracking-widest text-purple-400 font-mono">03:00</div>
+          </div>
+        </div>
+        
+        <div class="flex items-center space-x-2">
+          <button id="timerStartBtn" onclick="toggleRoleplayTimer()" class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-bold text-xs transition shadow-sm">
+            <i class="fa-solid fa-play mr-1"></i> Start 3-Min Conversation
+          </button>
+          <button onclick="resetRoleplayTimer()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium text-xs transition">
+            <i class="fa-solid fa-arrow-rotate-left mr-1"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Scenario Role Cards -->
+      <div id="scenarioContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Student A Card -->
+        <div class="bg-purple-50/60 border-2 border-purple-300/80 rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-brand-600 text-white text-xs font-bold uppercase tracking-wider">Role A: Teenager</span>
+            <i class="fa-solid fa-user text-brand-600"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base" id="roleATitle">The 15-Year-Old Student</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed" id="roleADesc">
+              Your parent wants to take your smartphone away every night at 8:30 PM. You think this is unfair because you use your phone for school group projects, alarms, and relaxing after homework.
+            </p>
+          </div>
+          
+          <div class="bg-white p-3 rounded-xl border border-purple-200 text-xs space-y-1.5">
+            <span class="font-bold text-purple-900 block mb-1">Your Secret Objectives:</span>
+            <p class="text-slate-700" id="roleAObj1">• Explain why you need your phone until 10:00 PM for school chat.</p>
+            <p class="text-slate-700" id="roleAObj2">• Promise to charge it outside your bedroom after 10:00 PM.</p>
+            <p class="text-slate-700" id="roleAObj3">• Maintain a respectful, mature tone using: <em>"Could we please find a compromise...?"</em></p>
+          </div>
+        </div>
+
+        <!-- Student B Card -->
+        <div class="bg-cyan-50/60 border-2 border-cyan-300/80 rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-cyan-600 text-white text-xs font-bold uppercase tracking-wider">Role B: Concerned Parent</span>
+            <i class="fa-solid fa-user-shield text-cyan-600"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base" id="roleBTitle">The Caring Parent</h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed" id="roleBDesc">
+              You noticed your teenager is tired in the mornings and grades have dropped slightly. You read medical articles about how blue light affects sleep, and you want healthy boundaries.
+            </p>
+          </div>
+
+          <div class="bg-white p-3 rounded-xl border border-cyan-200 text-xs space-y-1.5">
+            <span class="font-bold text-cyan-900 block mb-1">Your Secret Objectives:</span>
+            <p class="text-slate-700" id="roleBObj1">• Express concern about poor sleep and morning fatigue.</p>
+            <p class="text-slate-700" id="roleBObj2">• Offer a traditional alarm clock so the phone doesn't need to be in the bedroom.</p>
+            <p class="text-slate-700" id="roleBObj3">• Agree to 9:30 PM on weekdays and 10:30 PM on weekends if grades improve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Fluency Challenge: 60-Second Tech Challenge -->
+    <section id="challenge" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 6: Spontaneous Fluency (10 Mins)</span>
+        <h3 class="text-2xl font-bold text-slate-900 mt-1">The 60-Second "Tech Talk" Fluency Challenge</h3>
+        <p class="text-sm text-slate-500 mt-0.5">Pick a debate topic and speak continuously for 60 seconds without hesitation. Record your speech to analyze your rhythm.</p>
+      </div>
+
+      <!-- Challenge Box -->
+      <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 space-y-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Your Assigned Challenge Topic:</span>
+            <h4 id="challengeTopic" class="text-xl font-bold text-slate-900 mt-1 font-display">
+              "Should schools completely ban smartphones during the school day, or should teachers integrate them into lessons? State your opinion with reasons."
+            </h4>
+          </div>
+          <button onclick="shuffleChallengeTopic()" class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-xs hover:bg-slate-100 transition shadow-sm whitespace-nowrap">
+            <i class="fa-solid fa-arrows-rotate mr-1.5 text-brand-600"></i> New Topic
+          </button>
+        </div>
+
+        <!-- 60s Speaking Timer & Voice Recorder Controls -->
+        <div class="bg-white rounded-xl p-5 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          <!-- Live Countdown -->
+          <div class="flex items-center space-x-4">
+            <div class="relative w-16 h-16 flex items-center justify-center">
+              <svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+                <path class="text-slate-200" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path id="challengeCircleProgress" class="text-brand-500 transition-all duration-1000 ease-linear" stroke-width="3.5" stroke-dasharray="100, 100" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+              </svg>
+              <span id="challengeSeconds" class="absolute text-base font-extrabold text-slate-800 font-mono">60s</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-700" id="challengePhaseLabel">Ready to state your view?</div>
+              <div class="text-xs text-slate-500">Deliver your argument clearly and support with examples.</div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap items-center gap-3">
+            <button id="startChallengeBtn" onclick="start60sChallenge()" class="px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs transition shadow-md shadow-brand-500/20 flex items-center space-x-2">
+              <i class="fa-solid fa-play"></i>
+              <span>Start 60s Countdown</span>
+            </button>
+            <button id="recordVoiceBtn" onclick="toggleAudioRecording()" class="px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition shadow-md shadow-rose-500/20 flex items-center space-x-2">
+              <i class="fa-solid fa-circle-dot" id="recIcon"></i>
+              <span id="recBtnText">Record Argument</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recorded Audio Playback Container -->
+        <div id="audioPlaybackBox" class="hidden bg-purple-50/70 border border-purple-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center text-xs">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-brand-900 block">Your Spoken Recording:</span>
+              <span class="text-[11px] text-slate-500">Listen back and evaluate your fluency, connectors, and pronunciation.</span>
+            </div>
+          </div>
+          <audio id="recordedAudioElement" controls class="h-9 w-full sm:w-64"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CEFR B1 Digital Speaking Competency Checklist -->
+    <section id="assessment" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      <div class="border-b border-slate-100 pb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Self-Assessment</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1">B1 Debating & Digital Speaking Checklist</h3>
+          <p class="text-sm text-slate-500 mt-0.5">Rate your ability to debate technology and discuss habits according to CEFR B1 criteria.</p>
+        </div>
+        <div id="scoreBadge" class="px-3 py-1 bg-slate-100 text-slate-700 rounded-xl text-xs font-bold">
+          Progress: <span id="checkedCount" class="text-brand-600">0</span>/5 Complete
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">1. Contrasting Habits:</strong>
+            <span class="text-slate-500">I used <em>used to + infinitive</em> to talk about discontinued past habits and <em>be used to + -ing</em> for current routines.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">2. Balanced Arguments:</strong>
+            <span class="text-slate-500">I presented both sides of an issue using phrases like <em>"While it is convenient, on the flip side..."</em>.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">3. Future Probability:</strong>
+            <span class="text-slate-500">I expressed predictions about technology using expressions like <em>is likely to</em>, <em>will probably</em>, and <em>might</em>.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">4. Making Generalizations:</strong>
+            <span class="text-slate-500">I avoided absolute statements by using qualifiers like <em>"Generally speaking..."</em> and <em>"People tend to..."</em>.</span>
+          </div>
+        </label>
+
+        <label class="flex items-start space-x-3.5 p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+          <input type="checkbox" onchange="updateChecklist()" class="checklist-item mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+          <div class="text-xs sm:text-sm">
+            <strong class="text-slate-800 block">5. Spoken Flow & Negotiation:</strong>
+            <span class="text-slate-500">I negotiated a reasonable compromise in the roleplay without becoming aggressive or running out of things to say.</span>
+          </div>
+        </label>
+      </div>
+
+      <!-- Celebration Box when complete -->
+      <div id="celebrateBox" class="hidden p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm flex items-center space-x-3">
+        <i class="fa-solid fa-trophy text-2xl text-emerald-600"></i>
+        <div>
+          <strong class="block text-emerald-900 font-bold">Incredible job! CEFR B1 Digital Debating Milestone Reached!</strong>
+          <span>You have demonstrated effective communicative competence for debating contemporary digital issues and personal habits.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <p class="font-semibold text-slate-700">ESL Speaking Studio • CEFR B1 Intermediate English Curriculum</p>
+      <p>Module 3: Digital Life, Social Media & Screen Time • Suitable for high school, university, and adult ESL learners.</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic JS -->
+  <script>
+    // --- State Variables ---
+    let ttsSpeed = 1.0;
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let isRecording = false;
+
+    // --- TTS Engine ---
+    function toggleTtsSpeed() {
+      ttsSpeed = ttsSpeed === 1.0 ? 0.75 : (ttsSpeed === 0.75 ? 1.25 : 1.0);
+      document.getElementById('speedLabel').innerText = ttsSpeed + 'x';
+    }
+
+    function speakText(text) {
+      if (!('speechSynthesis' in window)) {
+        alert('Your browser does not support Speech Synthesis.');
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const cleanText = text.replace(/<[^>]*>?/gm, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = ttsSpeed;
+      utterance.lang = 'en-GB';
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // --- Warm-Up Question Deck ---
+    const warmupQuestions = [
+      {
+        category: "Screen Habits",
+        icon: "fa-mobile-screen-button",
+        question: "Could you survive a full 7-day 'digital detox' with zero smartphone or social media access? What would you find most difficult?",
+        tip: "Use conditional & habit structures: 'If I had to disconnect...', 'I am so used to checking...', 'I think the hardest part would be...'",
+        sample: "To be honest, I think it would be a huge challenge for me at first. I am so used to using GPS maps for travelling and messaging my friends every morning. However, after the first two days, it would probably feel quite refreshing and peaceful. I would definitely read more books and go for long walks outdoors without checking notifications."
+      },
+      {
+        category: "Social Connection",
+        icon: "fa-users-between-lines",
+        question: "Do you think social media makes people feel more connected to their friends, or does it make them feel more isolated and lonely?",
+        tip: "Weigh pros & cons: 'On the one hand, it helps people stay in touch across continents...', 'On the other hand, it creates unrealistic comparisons...'",
+        sample: "From my perspective, it is a double-edged sword. While social networks make it easy to stay in touch with relatives who live abroad, they can also cause loneliness because virtual likes cannot replace genuine face-to-face interaction."
+      },
+      {
+        category: "Artificial Intelligence",
+        icon: "fa-robot",
+        question: "How do you think Artificial Intelligence (AI) will change education and language learning in the next 10 years?",
+        tip: "Express future probability: 'AI is likely to...', 'Teachers will probably focus more on...', 'Students might become more independent...'",
+        sample: "I believe AI is likely to revolutionize language learning by providing personalized speaking partners available 24/7. However, I am convinced that human teachers will still be essential for inspiring students, explaining cultural nuances, and providing empathy."
+      },
+      {
+        category: "Online Shopping & Ads",
+        icon: "fa-cart-shopping",
+        question: "Have you ever bought something online because of an influencer recommendation or social media ad? Did you regret it?",
+        tip: "Tell an anecdote: 'A few months ago...', 'I saw an ad for...', 'When it finally arrived, it turned out to be...'",
+        sample: "Yes, once I bought a portable wireless blender that looked amazing on Instagram. The ad showed it blending frozen fruit in seconds, but when I tried it at home, the motor was very weak! In the end, I had to return it for a refund, so I am much more careful now."
+      },
+      {
+        category: "Youth & Technology",
+        icon: "fa-child",
+        question: "At what age should children be allowed to have their own smartphone and social media accounts? Why?",
+        tip: "Give justified opinions: 'In my view, children shouldn't have...', 'Before that age, they aren't mature enough to handle...'",
+        sample: "In my opinion, children shouldn't have their own smartphones before the age of 13 or 14. Before that age, their brains are still developing, and they are especially vulnerable to cyberbullying, screen addiction, and inappropriate content."
+      }
+    ];
+
+    let currentWarmupIndex = 0;
+
+    function drawWarmupCard() {
+      currentWarmupIndex = (currentWarmupIndex + 1) % warmupQuestions.length;
+      const data = warmupQuestions[currentWarmupIndex];
+      document.getElementById('warmupCategory').innerHTML = `<i class="fa-solid ${data.icon} mr-1.5"></i> ${data.category}`;
+      document.getElementById('warmupIndex').innerText = `Question ${currentWarmupIndex + 1} of ${warmupQuestions.length}`;
+      document.getElementById('warmupQuestion').innerText = `"${data.question}"`;
+      document.getElementById('warmupTip').innerHTML = `• ${data.tip}`;
+      document.getElementById('warmupSampleAnswer').innerText = `"${data.sample}"`;
+      
+      document.getElementById('warmupSampleBox').classList.add('hidden');
+      document.getElementById('sampleToggleText').innerText = "Show Model B1 Answer";
+    }
+
+    function toggleWarmupSample() {
+      const box = document.getElementById('warmupSampleBox');
+      const text = document.getElementById('sampleToggleText');
+      if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        text.innerText = "Hide Model Answer";
+      } else {
+        box.classList.add('hidden');
+        text.innerText = "Show Model B1 Answer";
+      }
+    }
+
+    // --- Vocabulary Flashcard Toggle ---
+    function toggleVocabFlip(card) {
+      const example = card.querySelector('.vocab-example');
+      if (example.classList.contains('hidden')) {
+        example.classList.remove('hidden');
+      } else {
+        example.classList.add('hidden');
+      }
+    }
+
+    // --- Vocab Quick Quiz ---
+    function checkVocabQuiz(btn, isCorrect) {
+      const feedback = document.getElementById('vocabQuizFeedback');
+      feedback.classList.remove('hidden');
+      if (isCorrect) {
+        feedback.className = "mt-2.5 text-xs font-semibold text-emerald-600";
+        feedback.innerHTML = '<i class="fa-solid fa-circle-check mr-1"></i> Excellent! A "digital detox" refers to a break from digital devices to reduce stress and re-engage with physical activities.';
+      } else {
+        feedback.className = "mt-2.5 text-xs font-semibold text-rose-600";
+        feedback.innerHTML = '<i class="fa-solid fa-circle-xmark mr-1"></i> Not quite. Intentionally taking a break from technology is called a <strong>digital detox</strong>.';
+      }
+    }
+
+    // --- Functional Language Tabs ---
+    function switchPhraseTab(tabKey) {
+      document.querySelectorAll('.phrase-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById(`tabBtn-${tabKey}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+        activeBtn.classList.remove('bg-slate-100', 'text-slate-700');
+      }
+
+      document.querySelectorAll('.phrase-panel').forEach(p => p.classList.add('hidden'));
+      const activePanel = document.getElementById(`panel-${tabKey}`);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+    }
+
+    // --- Grammar Quiz Feedback ---
+    function handleGrammarChoice(btn, isCorrect) {
+      const parent = btn.closest('.grammar-question');
+      const explanation = parent.querySelector('.grammar-explanation');
+      explanation.classList.remove('hidden');
+
+      if (isCorrect) {
+        explanation.className = "grammar-explanation text-xs font-semibold mt-1 text-emerald-600";
+        explanation.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Correct! Excellent grasp of B1 structures for habits and probability!';
+      } else {
+        explanation.className = "grammar-explanation text-xs font-semibold mt-1 text-rose-600";
+        explanation.innerHTML = '<i class="fa-solid fa-xmark mr-1"></i> Review rule: remember that "didn\'t use to + base verb" describes a past discontinued state/habit.';
+      }
+    }
+
+    // --- Roleplay Scenarios Data ---
+    const scenarios = {
+      screentime: {
+        roleA: {
+          title: "The 15-Year-Old Student",
+          desc: "Your parent wants to take your smartphone away every night at 8:30 PM. You think this is unfair because you use your phone for school group projects, alarms, and relaxing after homework.",
+          obj: [
+            "• Explain why you need your phone until 10:00 PM for school chat.",
+            "• Promise to charge it outside your bedroom after 10:00 PM.",
+            "• Maintain a respectful, mature tone using: \"Could we please find a compromise...?\""
+          ]
+        },
+        roleB: {
+          title: "The Caring Parent",
+          desc: "You noticed your teenager is tired in the mornings and grades have dropped slightly. You read medical articles about how blue light affects sleep, and you want healthy boundaries.",
+          obj: [
+            "• Express concern about poor sleep and morning fatigue.",
+            "• Offer a traditional alarm clock so the phone doesn't need to be in the bedroom.",
+            "• Agree to 9:30 PM on weekdays and 10:30 PM on weekends if grades improve."
+          ]
+        }
+      },
+      techsupport: {
+        roleA: {
+          title: "Frustrated Customer",
+          desc: "You bought a brand-new tablet 3 weeks ago for €450. Yesterday, the screen froze completely and the battery discharges in 40 minutes.",
+          obj: [
+            "• Explain politely what happened: \"While I was using the tablet, the screen went black...\"",
+            "• State your consumer rights and ask for a brand-new replacement or full refund.",
+            "• Refuse to pay any repair or inspection fees."
+          ]
+        },
+        roleB: {
+          title: "Tech Support Representative",
+          desc: "Your company policy does not permit instant refunds after 14 days without an authorized technical diagnosis by certified engineers.",
+          obj: [
+            "• Calm the customer down: \"I understand how frustrating this must be for you.\"",
+            "• Offer free same-day diagnostic service and a loan device while it is examined.",
+            "• Promise a replacement if it is confirmed to be a factory defect."
+          ]
+        }
+      },
+      digitaldinner: {
+        roleA: {
+          title: "The Anti-Distraction Roommate",
+          desc: "Every time you and your friend eat dinner together, your friend puts their phone on the table and checks Instagram or WhatsApp every 2 minutes.",
+          obj: [
+            "• Express how it makes you feel ignored during meals.",
+            "• Propose a 'phone basket' rule during dinner where phones stay on silent.",
+            "• Suggest that whoever checks their phone first does the dishes!"
+          ]
+        },
+        roleB: {
+          title: "The Always-Connected Friend",
+          desc: "You are waiting for important messages from work and family members abroad. You don't think checking quick messages is rude if you still talk.",
+          obj: [
+            "• Explain why you feel anxious when you don't check urgent notifications.",
+            "• Agree to turn off social media notifications but keep phone calls on for emergency.",
+            "• Agree to test the rule for 3 dinners this week."
+          ]
+        }
+      }
+    };
+
+    function loadScenario(key) {
+      const sc = scenarios[key];
+      if (!sc) return;
+
+      document.getElementById('roleATitle').innerText = sc.roleA.title;
+      document.getElementById('roleADesc').innerText = sc.roleA.desc;
+      document.getElementById('roleAObj1').innerText = sc.roleA.obj[0];
+      document.getElementById('roleAObj2').innerText = sc.roleA.obj[1];
+      document.getElementById('roleAObj3').innerText = sc.roleA.obj[2];
+
+      document.getElementById('roleBTitle').innerText = sc.roleB.title;
+      document.getElementById('roleBDesc').innerText = sc.roleB.desc;
+      document.getElementById('roleBObj1').innerText = sc.roleB.obj[0];
+      document.getElementById('roleBObj2').innerText = sc.roleB.obj[1];
+      document.getElementById('roleBObj3').innerText = sc.roleB.obj[2];
+    }
+
+    // --- Roleplay Timer ---
+    let roleplaySeconds = 180;
+    let roleplayInterval = null;
+
+    function toggleRoleplayTimer() {
+      const btn = document.getElementById('timerStartBtn');
+      if (roleplayInterval) {
+        clearInterval(roleplayInterval);
+        roleplayInterval = null;
+        btn.innerHTML = '<i class="fa-solid fa-play mr-1"></i> Resume Conversation';
+      } else {
+        roleplayInterval = setInterval(() => {
+          if (roleplaySeconds <= 0) {
+            clearInterval(roleplayInterval);
+            roleplayInterval = null;
+            btn.innerHTML = '<i class="fa-solid fa-check mr-1"></i> Time Up!';
+            speakText("Time is up! Great job finishing the digital debate.");
+            return;
+          }
+          roleplaySeconds--;
+          updateRoleplayTimerDisplay();
+        }, 1000);
+        btn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> Pause Timer';
+      }
+    }
+
+    function resetRoleplayTimer() {
+      clearInterval(roleplayInterval);
+      roleplayInterval = null;
+      roleplaySeconds = 180;
+      updateRoleplayTimerDisplay();
+      document.getElementById('timerStartBtn').innerHTML = '<i class="fa-solid fa-play mr-1"></i> Start 3-Min Conversation';
+    }
+
+    function updateRoleplayTimerDisplay() {
+      const m = Math.floor(roleplaySeconds / 60);
+      const s = roleplaySeconds % 60;
+      document.getElementById('roleplayTimerDisplay').innerText = 
+        `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
+
+    // --- 60-Second Challenge ---
+    const challengeTopics = [
+      "Should schools completely ban smartphones during the school day, or should teachers integrate them into lessons? State your opinion with reasons.",
+      "If you had to choose between giving up all music streaming or all video/social apps for a year, which would you sacrifice and why?",
+      "Do you think artificial intelligence will make human creativity more valuable or less valuable? Give your opinion.",
+      "Describe how technology has changed the way your family or friends celebrate holidays compared to 20 years ago.",
+      "Should governments introduce stricter regulations and age verification for social media platforms? Explain your perspective."
+    ];
+
+    let challengeIndex = 0;
+    let challengeSeconds = 60;
+    let challengeTimer = null;
+
+    function shuffleChallengeTopic() {
+      challengeIndex = (challengeIndex + 1) % challengeTopics.length;
+      document.getElementById('challengeTopic').innerText = `"${challengeTopics[challengeIndex]}"`;
+    }
+
+    function start60sChallenge() {
+      if (challengeTimer) {
+        clearInterval(challengeTimer);
+      }
+      challengeSeconds = 60;
+      const circle = document.getElementById('challengeCircleProgress');
+      const label = document.getElementById('challengeSeconds');
+      const phase = document.getElementById('challengePhaseLabel');
+      
+      phase.innerText = "Debating now! Express your points smoothly...";
+      phase.className = "text-xs font-bold text-brand-600";
+
+      challengeTimer = setInterval(() => {
+        challengeSeconds--;
+        label.innerText = challengeSeconds + 's';
+        
+        const percent = (challengeSeconds / 60) * 100;
+        circle.setAttribute('stroke-dasharray', `${percent}, 100`);
+
+        if (challengeSeconds <= 0) {
+          clearInterval(challengeTimer);
+          challengeTimer = null;
+          phase.innerText = "Challenge Complete! Outstanding digital argument!";
+          phase.className = "text-xs font-bold text-emerald-600";
+          speakText("Time is up! Outstanding effort!");
+        }
+      }, 1000);
+    }
+
+    // --- Audio Recording API ---
+    async function toggleAudioRecording() {
+      const btn = document.getElementById('recordVoiceBtn');
+      const recIcon = document.getElementById('recIcon');
+      const text = document.getElementById('recBtnText');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          mediaRecorder = new MediaRecorder(stream);
+          audioChunks = [];
+
+          mediaRecorder.ondataavailable = event => {
+            audioChunks.push(event.data);
+          };
+
+          mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+            const audioUrl = URL.createObjectURL(audioBlob);
+            const player = document.getElementById('recordedAudioElement');
+            player.src = audioUrl;
+            document.getElementById('audioPlaybackBox').classList.remove('hidden');
+          };
+
+          mediaRecorder.start();
+          isRecording = true;
+          recIcon.className = "fa-solid fa-stop";
+          text.innerText = "Stop Recording";
+          btn.className = "px-4 py-2.5 rounded-xl bg-slate-900 text-white font-bold text-xs transition shadow-md flex items-center space-x-2 animate-pulse";
+        } catch (err) {
+          alert('Microphone access was denied or is not supported in your browser.');
+        }
+      } else {
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+        isRecording = false;
+        recIcon.className = "fa-solid fa-circle-dot";
+        text.innerText = "Record Argument Again";
+        btn.className = "px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition shadow-md shadow-rose-500/20 flex items-center space-x-2";
+      }
+    }
+
+    // --- Checklist & Evaluation ---
+    function updateChecklist() {
+      const items = document.querySelectorAll('.checklist-item');
+      let count = 0;
+      items.forEach(item => {
+        if (item.checked) count++;
+      });
+      document.getElementById('checkedCount').innerText = count;
+
+      const celebrate = document.getElementById('celebrateBox');
+      if (count === items.length) {
+        celebrate.classList.remove('hidden');
+      } else {
+        celebrate.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

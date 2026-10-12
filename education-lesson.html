@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESL B1 Speaking Lesson: Education, Lifelong Learning & Future Skills</title>
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+            },
+            academy: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+            },
+            goldAccent: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .card-flipped {
+      transform: rotateY(180deg);
+    }
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt !important;
+      }
+      .no-print, header, aside, .lesson-switcher-banner, #recordingStudio, #practiceTimer, button, .audio-btn {
+        display: none !important;
+      }
+      .card-inner {
+        transform: none !important;
+      }
+      .card-back {
+        display: block !important;
+        transform: none !important;
+        position: static !important;
+        border-top: 1px dashed #cbd5e1 !important;
+        margin-top: 0.5rem !important;
+        padding-top: 0.5rem !important;
+      }
+      .print-break-inside {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-200">
+
+  <!-- Curriculum Switcher Banner -->
+  <aside class="lesson-switcher-banner bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap items-center justify-between gap-2" aria-label="Curriculum units navigation">
+    <div class="flex items-center space-x-2">
+      <span class="px-2 py-0.5 rounded bg-brand-600 text-white font-bold text-[10px] uppercase tracking-wider">B1 Curriculum</span>
+      <span>Select Module:</span>
+      <a href="index.html" class="text-slate-300 hover:text-white underline ml-1">Unit 1: Travel</a>
+      <span class="text-slate-600">•</span>
+      <a href="career-lesson.html" class="text-slate-300 hover:text-white underline">Unit 2: Workplace</a>
+      <span class="text-slate-600">•</span>
+      <a href="tech-lesson.html" class="text-slate-300 hover:text-white underline">Unit 3: Digital Life</a>
+      <span class="text-slate-600">•</span>
+      <a href="food-lesson.html" class="text-slate-300 hover:text-white underline">Unit 4: Food & Dining</a>
+      <span class="text-slate-600">•</span>
+      <a href="environment-lesson.html" class="text-slate-300 hover:text-white underline">Unit 5: Green Living</a>
+      <span class="text-slate-600">•</span>
+      <a href="health-lesson.html" class="text-slate-300 hover:text-white underline">Unit 6: Health & Fitness</a>
+      <span class="text-slate-600">•</span>
+      <a href="finance-lesson.html" class="text-slate-300 hover:text-white underline">Unit 7: Money & Spending</a>
+      <span class="text-slate-600">•</span>
+      <a href="entertainment-lesson.html" class="text-slate-300 hover:text-white underline">Unit 8: Entertainment</a>
+      <span class="text-slate-600">•</span>
+      <a href="housing-lesson.html" class="text-slate-300 hover:text-white underline">Unit 9: Housing & Cities</a>
+      <span class="text-slate-600">•</span>
+      <span class="text-indigo-400 font-bold">Unit 10: Education & Skills</span>
+    </div>
+    <div class="flex items-center space-x-3 text-[11px] text-slate-400">
+      <span><i class="fa-solid fa-graduation-cap text-indigo-400 mr-1"></i> CEFR B1 Spoken Production & Interaction</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+          <i class="fa-solid fa-graduation-cap text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200">CEFR B1 Intermediate</span>
+          <h1 class="text-base font-bold text-slate-900 leading-tight">ESL Speaking Studio</h1>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-sm font-medium text-slate-600">
+        <a href="#warmup" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">1. Warm-Up</a>
+        <a href="#vocabulary" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">2. Academic Lexicon</a>
+        <a href="#functional" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">3. Evaluating Pathways</a>
+        <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Deduction & Contrast</a>
+        <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Study Scenarios</a>
+        <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Future Skills Pitch</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2">
+        <button id="ttsSpeedBtn" onclick="toggleTtsSpeed()" class="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200 bg-white font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm flex items-center space-x-1.5" title="Switch speech speed">
+          <i class="fa-solid fa-gauge-high text-brand-600"></i>
+          <span>Speed: <span id="speedLabel" class="text-brand-700 font-bold">1.0x</span></span>
+        </button>
+        <button onclick="window.print()" class="text-xs px-3 py-1.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition shadow-sm flex items-center space-x-1.5">
+          <i class="fa-solid fa-print"></i>
+          <span class="hidden sm:inline">Handout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-indigo-50/70 via-white to-slate-50 py-10 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-3">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-100/90 border border-indigo-200 text-indigo-800 text-xs font-semibold">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <span>Unit 10: Education, Lifelong Learning & Modern Skills</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display">
+            Speaking Out Loud: <span class="text-brand-600">Degrees, Apprenticeships & Modern Study Habits</span>
+          </h2>
+          <p class="text-slate-600 text-base max-w-2xl leading-relaxed">
+            Gain spoken fluency to debate academic university degrees versus practical vocational skills, discuss study techniques, consult academic advisors, express logical deductions about student challenges, and formulate balanced contrasts.
+          </p>
+        </div>
+        
+        <!-- Lesson Goals Card -->
+        <div class="bg-white p-5 rounded-2xl border border-indigo-100 shadow-md shadow-indigo-500/5 max-w-xs w-full text-xs space-y-2.5">
+          <div class="font-bold text-slate-900 flex items-center space-x-2">
+            <i class="fa-solid fa-bullseye text-brand-600"></i>
+            <span>Lesson Learning Targets (B1)</span>
+          </div>
+          <ul class="space-y-1.5 text-slate-600 list-disc list-inside">
+            <li>Compare traditional degrees with bootcamps & trades.</li>
+            <li>Master <strong>Modals of Deduction</strong> (*must be*, *can't be*).</li>
+            <li>Use <strong>Contrast Connectors</strong> (*whereas*, *despite*, *although*).</li>
+            <li>Resolve group project deadlines & workload disputes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+
+    <!-- Section 1: Warm-Up & Icebreakers -->
+    <section id="warmup" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 1: Fluency Activation</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Learning Styles & Academic Dilemmas</h3>
+        <p class="text-sm text-slate-500">Pick two prompt cards below. Speak out loud continuously for 60 seconds each using the guiding questions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">1</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">University vs. Trade School</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Is a traditional 4-year university degree still worth the time and debt, or are practical vocational apprenticeships and coding bootcamps a smarter pathway today?
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('Is a traditional four-year university degree still worth the investment? Share your opinion.')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">2</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">Exams vs. Continuous Coursework</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Do high-stakes final exams measure real intelligence, or do continuous assignments, group presentations, and practical projects give a fairer picture?
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('Do final exams measure true understanding, or do continuous projects give a better evaluation?')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-brand-300 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-brand-600 flex items-center justify-center font-bold text-sm mb-3">3</div>
+            <h4 class="font-bold text-slate-900 text-base mb-2">AI Tutors & The Future Classroom</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Would you learn faster with a personalized 24/7 AI tutor that adapts to your weaknesses, or do human teachers provide empathy and motivation that machines can never match?
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 italic">Target time: 60 sec</span>
+            <button onclick="playTTS('Could artificial intelligence tutors ever completely replace human classroom teachers? Explain why or why not.')" class="text-brand-600 hover:text-brand-800 font-medium flex items-center space-x-1">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Core Education Vocabulary (Flippable Flashcards) -->
+    <section id="vocabulary" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 2: Precision Lexicon</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">Essential Academic & Skills Collocations</h3>
+          <p class="text-sm text-slate-500">Click any card to flip and reveal the definition, pronunciation guide, example sentence, and spoken drill.</p>
+        </div>
+        <button onclick="flipAllCards()" class="self-start sm:self-center text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 transition">
+          <i class="fa-solid fa-arrows-rotate mr-1 text-brand-600"></i> Flip All Cards
+        </button>
+      </div>
+
+      <!-- 6 Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Vocab 1: Vocational training -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-indigo-50 text-brand-700 border border-indigo-200">Noun Collocation</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">vocational training</h4>
+                <p class="text-xs font-mono text-slate-400">/vəʊˈkeɪʃənl ˈtreɪnɪŋ/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Education that prepares people for specific technical or practical jobs (such as electricians, nurses, software coders, or chefs).</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-indigo-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-indigo-200">In Context</span>
+                <p class="text-xs text-indigo-100 mt-2 italic">"He chose vocational training over university because he wanted immediate hands-on technical skills."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What vocational skills are most in-demand in your country?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('He chose vocational training over university because he wanted immediate hands-on technical skills.')" class="self-start text-xs bg-indigo-600 hover:bg-indigo-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 2: Tuition fees / Scholarship -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200">Financial Terms</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">tuition fees / scholarship</h4>
+                <p class="text-xs font-mono text-slate-400">/tjuːˈɪʃn fiːz/ - /ˈskɒləʃɪp/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Tuition fees are the cost charged by universities for instruction; a scholarship is financial aid granted to a student based on merit or need.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-amber-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-amber-200">In Context</span>
+                <p class="text-xs text-amber-100 mt-2 italic">"Without that full academic scholarship, she could never have afforded the astronomical tuition fees."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Should higher education be free for all students?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Without that full academic scholarship, she could never have afforded the astronomical tuition fees.')" class="self-start text-xs bg-amber-600 hover:bg-amber-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 3: Continuous assessment -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">Academic Method</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">continuous assessment</h4>
+                <p class="text-xs font-mono text-slate-400">/kənˈtɪnjuəs əˈsesmənt/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Evaluating students through ongoing essays, presentations, lab work, and quizzes throughout the term rather than one final exam.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-emerald-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-emerald-200">In Context</span>
+                <p class="text-xs text-emerald-100 mt-2 italic">"I perform far better under continuous assessment because final exam hall stress makes me panic."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Which grading system motivated you more at school?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('I perform far better under continuous assessment because final exam hall stress makes me panic.')" class="self-start text-xs bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 4: Rote learning vs Critical thinking -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">Learning Models</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">rote learning / critical thinking</h4>
+                <p class="text-xs font-mono text-slate-400">/rəʊt ˈlɜːnɪŋ/ - /ˈkrɪtɪkl ˈθɪŋkɪŋ/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Rote learning is memorizing facts through repetition without deep comprehension; critical thinking is analyzing arguments objectively.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-rose-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-rose-200">In Context</span>
+                <p class="text-xs text-rose-100 mt-2 italic">"Modern workplaces do not need rote learning; they demand workers capable of critical thinking and problem-solving."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "Did your schooling focus more on memorizing or on questioning ideas?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Modern workplaces do not need rote learning; they demand workers capable of critical thinking and problem-solving.')" class="self-start text-xs bg-rose-600 hover:bg-rose-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 5: Hands-on experience -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 border border-cyan-200">Practical Skill</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">hands-on experience</h4>
+                <p class="text-xs font-mono text-slate-400">/hændz ɒn ɪkˈspɪəriəns/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Direct, practical involvement and active participation in an activity, rather than merely reading theoretical textbooks.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-cyan-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-cyan-200">In Context</span>
+                <p class="text-xs text-cyan-100 mt-2 italic">"Internships are valuable because employers prioritize candidates who already have hands-on experience."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What skills did you learn best through hands-on practice?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Internships are valuable because employers prioritize candidates who already have hands-on experience.')" class="self-start text-xs bg-cyan-600 hover:bg-cyan-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vocab 6: Lifelong learning & Upskilling -->
+        <div class="card perspective-1000 h-64 cursor-pointer" onclick="flipCard(this)">
+          <div class="card-inner relative w-full h-full transform-style-3d transition-transform duration-500 rounded-2xl shadow-sm border border-slate-200">
+            <!-- Front -->
+            <div class="card-front absolute w-full h-full backface-hidden bg-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-purple-50 text-purple-700 border border-purple-200">Modern Concept</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-2 font-display">lifelong learning / upskilling</h4>
+                <p class="text-xs font-mono text-slate-400">/ˈlaɪflɒŋ ˈlɜːnɪŋ/ - /ʌpˈskɪlɪŋ/</p>
+                <p class="text-xs text-slate-600 mt-3 line-clamp-3">Continuing to develop new knowledge and professional abilities throughout your entire career, especially as industries evolve.</p>
+              </div>
+              <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-brand-600 font-medium">
+                <span>Click to see example & drill</span>
+                <i class="fa-solid fa-rotate text-slate-400"></i>
+              </div>
+            </div>
+            <!-- Back -->
+            <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 bg-gradient-to-br from-purple-950 to-slate-900 text-white p-5 rounded-2xl flex flex-col justify-between">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/20 text-purple-200">In Context</span>
+                <p class="text-xs text-purple-100 mt-2 italic">"Due to rapid advances in technology, upskilling and lifelong learning have become essential for job security."</p>
+                <div class="mt-3 bg-white/10 p-2.5 rounded-xl border border-white/10 text-xs">
+                  <span class="font-bold text-amber-300 block mb-0.5">Spoken Practice:</span>
+                  "What new skill or subject would you like to master this year?"
+                </div>
+              </div>
+              <button onclick="event.stopPropagation(); playTTS('Due to rapid advances in technology, upskilling and lifelong learning have become essential for job security.')" class="self-start text-xs bg-purple-600 hover:bg-purple-500 text-white px-2.5 py-1 rounded-lg flex items-center space-x-1.5 transition">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Hear Sentence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Functional Phrases for Evaluating Pathways & Study Advice -->
+    <section id="functional" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 3: Spoken Interaction Toolkit</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Evaluating Educational Options & Giving Advice</h3>
+        <p class="text-sm text-slate-500">Master spoken stems to weigh up career paths, consult advisors, and express logical recommendations.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Category 1: Weighing Up Pathways -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-indigo-700 font-bold text-sm">
+            <i class="fa-solid fa-scale-balanced text-indigo-500"></i>
+            <span>Weighing Pros & Cons of Academic Paths</span>
+          </div>
+          <p class="text-xs text-slate-500">Use these discourse stems to sound balanced and analytical.</p>
+          
+          <div class="space-y-3">
+            <div class="bg-slate-50 hover:bg-indigo-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"When weighing up university against an apprenticeship, the key factor is debt."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Strong introductory stem for comparing career choices.</span>
+              </div>
+              <button onclick="playTTS('When weighing up university against an apprenticeship, the key factor is debt.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-indigo-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"On the one hand, a degree opens international doors; on the other hand, it takes years."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Classic B1 dual-perspective framing.</span>
+              </div>
+              <button onclick="playTTS('On the one hand, a degree opens international doors; on the other hand, it takes years.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-indigo-50/60 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"If you ask me, hands-on experience carries significantly more weight than theory."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Confident personal conviction statement.</span>
+              </div>
+              <button onclick="playTTS('If you ask me, hands-on experience carries significantly more weight than theory.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Academic Advising & Study Strategies -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-slate-700 font-bold text-sm">
+            <i class="fa-solid fa-lightbulb text-amber-500"></i>
+            <span>Giving Study Advice & Resolving Workload</span>
+          </div>
+          <p class="text-xs text-slate-500">Constructive phrases for advising peers or seeking tutor guidance.</p>
+          
+          <div class="space-y-3">
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"You'd be far better off breaking the revision into small, daily chunks."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">"You'd be far better off + -ing" is an idiomatic advice stem.</span>
+              </div>
+              <button onclick="playTTS('You would be far better off breaking the revision into small daily chunks.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"I'm really struggling to juggle my part-time shifts with assignment deadlines."</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Expressing time-management pressure honestly.</span>
+              </div>
+              <button onclick="playTTS('I am really struggling to juggle my part-time shifts with assignment deadlines.')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+
+            <div class="bg-slate-50 hover:bg-slate-100 p-3 rounded-xl border border-slate-100 transition flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold text-slate-800">"Would it be possible to get an extension on the research paper?"</p>
+                <span class="text-[11px] text-slate-500 block mt-0.5">Polite academic request formula to a professor.</span>
+              </div>
+              <button onclick="playTTS('Would it be possible to get an extension on the research paper?')" class="text-slate-400 hover:text-brand-600 text-sm mt-0.5">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Grammar in Action (Modals of Deduction & Contrast Connectors) -->
+    <section id="grammar" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 4: Structural Accuracy</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Target Grammar: Modals of Deduction & Contrast Connectors</h3>
+        <p class="text-sm text-slate-500">Move beyond basic guesses by using *must be*, *can't be*, and *might be*, plus linking clauses with *whereas*, *despite*, and *although*.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Pillar A: Modals of Deduction in the Present -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-brand-700 font-bold text-sm">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Modals of Deduction (must / can't / might + verb)</span>
+          </div>
+          
+          <div class="space-y-2.5 text-xs text-slate-600">
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-100">
+              <span class="font-bold text-emerald-800 block mb-1">95% Certain It Is True (must be):</span>
+              <p>"He has been studying in the library for 10 hours; he <span class="font-bold text-emerald-700 underline">must be exhausted</span>."</p>
+            </div>
+
+            <div class="p-3 bg-rose-50 rounded-xl border border-rose-100">
+              <span class="font-bold text-rose-800 block mb-1">95% Certain It Is Impossible (can't be):</span>
+              <p>"That <span class="font-bold text-rose-700 underline">can't be the exam room</span>; it's completely empty and dark."</p>
+              <p class="text-[11px] text-slate-500 mt-1">(Common error: Never say 'must not be' for logical impossibility; use 'can't be')</p>
+            </div>
+
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-100">
+              <span class="font-bold text-amber-800 block mb-1">Possibility / Uncertainty (might / could be):</span>
+              <p>"The lecturer is late; she <span class="font-bold text-amber-700 underline">might be stuck</span> in morning traffic."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar B: Contrast & Concession Connectors -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <div class="flex items-center space-x-2 text-indigo-700 font-bold text-sm">
+            <i class="fa-solid fa-arrows-split-up-and-left"></i>
+            <span>Contrast Connectors (whereas / although / despite)</span>
+          </div>
+          <p class="text-xs text-slate-500">Essential for B1 essays, discussions, and comparative presentations.</p>
+          
+          <div class="space-y-3 text-xs">
+            <div class="bg-indigo-50/60 p-3 rounded-xl border border-indigo-100">
+              <span class="font-bold text-indigo-800 block mb-0.5">Whereas / While (Direct contrast between two subjects):</span>
+              <p>"Vocational courses focus on practice, <span class="font-bold text-indigo-600">whereas</span> university degrees emphasize academic theory."</p>
+            </div>
+
+            <div class="bg-indigo-50/60 p-3 rounded-xl border border-indigo-100">
+              <span class="font-bold text-indigo-800 block mb-0.5">Although / Even though (+ subject + verb clause):</span>
+              <p>"<span class="font-bold text-indigo-600">Although</span> the tuition fees were high, the quality of teaching was exceptional."</p>
+            </div>
+
+            <div class="bg-indigo-50/60 p-3 rounded-xl border border-indigo-100">
+              <span class="font-bold text-indigo-800 block mb-0.5">Despite / In spite of (+ noun / -ing gerund):</span>
+              <p>"<span class="font-bold text-indigo-600">Despite feeling</span> unprepared, he managed to pass the oral examination."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Grammar Check -->
+      <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-md space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-circle-question text-indigo-400"></i>
+            <h4 class="font-bold text-sm">Rapid Accuracy Check: Choose the Correct Spoken Form</h4>
+          </div>
+          <span class="text-xs text-slate-400">B1 Review</span>
+        </div>
+
+        <div class="space-y-3 text-xs" id="quizContainer">
+          <!-- Question 1 -->
+          <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <span class="text-slate-200">1. "She already scored 98% on the mock test. The final exam ________ a big problem for her."</span>
+            <div class="flex items-center space-x-2 shrink-0">
+              <button onclick="checkAnswer(this, true, 'Spot on! Can\'t be expresses logical impossibility based on strong evidence.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">can't be</button>
+              <button onclick="checkAnswer(this, false, 'In deduction, do not use mustn\'t for impossibility; use can\'t be.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">mustn't be</button>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="p-3 bg-slate-800/80 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <span class="text-slate-200">2. "________ the heavy rain and bus strikes, all students arrived on time for the test."</span>
+            <div class="flex items-center space-x-2 shrink-0">
+              <button onclick="checkAnswer(this, false, 'Although requires a subject and a verb clause; here we only have a noun phrase.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">Although</button>
+              <button onclick="checkAnswer(this, true, 'Correct! Despite is followed directly by a noun phrase.')" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 transition text-slate-200">Despite</button>
+            </div>
+          </div>
+        </div>
+        <div id="quizFeedback" class="text-xs text-indigo-300 font-medium hidden"></div>
+      </div>
+    </section>
+
+    <!-- Section 5: Real-World Academic & Study Scenarios -->
+    <section id="roleplay" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 5: Spoken Interaction</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Conversational Scenarios & Roleplay Tasks</h3>
+        <p class="text-sm text-slate-500">Pair up or practice speaking both roles out loud. Use the integrated prep & speaking timers below.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Scenario A -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-indigo-50 text-brand-700 text-[11px] font-bold">
+              <i class="fa-solid fa-user-graduate"></i>
+              <span>Scenario A: Academic Advisor Consultation</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Coursework Overload & Part-Time Work</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> You are taking 4 demanding modules while working 20 hours a week at a retail shop. Your grades are slipping and you meet your tutor to ask for advice and a possible deadline extension.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "To be completely candid, I'm struggling to juggle..."</p>
+              <p>• "Would it be feasible to defer one module until..."</p>
+              <p>• "Despite my best efforts, I can't keep up with..."</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario A: Academic Advisor Consultation')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+        <!-- Scenario B -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 text-[11px] font-bold">
+              <i class="fa-solid fa-code"></i>
+              <span>Scenario B: The Career Crossroads Debate</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">University Degree vs. Coding Bootcamp</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> Partner A wants to take out a £30,000 student loan for a 3-year history degree. Partner B argues that doing an intensive 6-month software engineering bootcamp is far more practical.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "On the one hand..., whereas on the other hand..."</p>
+              <p>• "You must be considering the long-term debt..."</p>
+              <p>• "A degree isn't just about jobs; it teaches critical thinking..."</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario B: University Degree vs Coding Bootcamp')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+        <!-- Scenario C -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 text-[11px] font-bold">
+              <i class="fa-solid fa-users-slash"></i>
+              <span>Scenario C: The Group Project Crisis</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Confronting an Unresponsive Teammate</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>Context:</strong> Your 4-person group presentation counts for 40% of the course grade. The deadline is in 48 hours, and one team member hasn't submitted their research slides or replied to group messages.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-[11px] space-y-1">
+              <span class="font-bold text-slate-700">Must include:</span>
+              <p>• "He can't still be without internet access for three days..."</p>
+              <p>• "If we don't finish their slides now, our overall grade will..."</p>
+              <p>• "Should we inform the professor before the presentation?"</p>
+            </div>
+          </div>
+          <button onclick="loadScenarioPrompt('Scenario C: The Group Project Crisis')" class="w-full text-xs font-bold py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white transition flex items-center justify-center space-x-1.5">
+            <i class="fa-solid fa-stopwatch"></i>
+            <span>Load into Timer</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Integrated Timer Widget -->
+      <div id="practiceTimer" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="space-y-1 text-center sm:text-left">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Interactive Speaking Clock</span>
+          <h4 id="activeScenarioTitle" class="text-base font-bold text-slate-900">Select a scenario above to start practice</h4>
+          <p id="timerPhaseLabel" class="text-xs text-slate-500">Preparation: 60s | Spoken delivery: 90s</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="text-3xl font-extrabold font-mono text-slate-900 bg-slate-100 px-4 py-2 rounded-xl border border-slate-200" id="timerDisplay">
+            01:00
+          </div>
+          <div class="flex items-center space-x-2">
+            <button id="startTimerBtn" onclick="toggleTimer()" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold rounded-xl shadow-sm transition flex items-center space-x-1">
+              <i class="fa-solid fa-play" id="timerIcon"></i>
+              <span id="timerBtnText">Start Prep</span>
+            </button>
+            <button onclick="resetTimer()" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition">
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Fluency Pitch & Recording Studio -->
+    <section id="challenge" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 6: Spoken Production Assessment</span>
+        <h3 class="text-2xl font-bold text-slate-900 font-display">Fluency Pitch: "The Future of Education & Skills"</h3>
+        <p class="text-sm text-slate-500">Record yourself giving an authentic B1 90-second perspective on how technology and practical skills are reshaping how humans learn. Listen back to assess your fluency and contrast connectors.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Pitch Guidelines -->
+        <div class="lg:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h4 class="font-bold text-slate-900 text-sm flex items-center space-x-2">
+            <i class="fa-solid fa-list-check text-brand-600"></i>
+            <span>Structure Your 90-Second Academic Pitch</span>
+          </h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">1. Personal Learning Background (20s):</span>
+              <p>Mention what subjects you studied and whether it was theory or hands-on.</p>
+              <span class="italic text-[11px] text-slate-500">"In my academic experience, most classes focused on..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">2. Degrees vs. Vocational Skills (25s):</span>
+              <p>Contrast traditional diplomas with continuous upskilling using 'whereas'.</p>
+              <span class="italic text-[11px] text-slate-500">"While universities provide prestige, vocational courses..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">3. Deductions on the Future (25s):</span>
+              <p>Use modals of deduction (*must be*, *can't be*) regarding AI in classrooms.</p>
+              <span class="italic text-[11px] text-slate-500">"Artificial intelligence must change how we learn, but it can't..."</span>
+            </div>
+
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 space-y-1">
+              <span class="font-bold text-slate-800">4. Your Next Learning Goal (20s):</span>
+              <p>State one new skill or language you are currently working on.</p>
+              <span class="italic text-[11px] text-slate-500">"In the coming year, I'm determined to master..."</span>
+            </div>
+          </div>
+
+          <!-- Model Sample Audio -->
+          <div class="p-4 bg-indigo-50/80 rounded-xl border border-indigo-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div>
+              <span class="font-bold text-brand-900 block">Listen to Model Answer (B1 Benchmark)</span>
+              <span class="text-slate-600">90-second balanced monologue on modern education and AI.</span>
+            </div>
+            <button onclick="playModelEducationPitch()" class="px-3.5 py-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-xl shadow-sm transition flex items-center space-x-1.5 shrink-0">
+              <i class="fa-solid fa-circle-play text-sm"></i>
+              <span>Play Sample Answer</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recording Studio Card -->
+        <div id="recordingStudio" class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between space-y-5">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Live Voice Lab</span>
+              <div id="recordingIndicator" class="flex items-center space-x-1 text-xs text-indigo-400 hidden">
+                <span class="w-2 h-2 rounded-full bg-indigo-500 animate-ping"></span>
+                <span>Recording</span>
+              </div>
+            </div>
+            <h4 class="font-bold text-base">Record Your Education Pitch</h4>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Use your device's microphone to record your 90-second response. Listen back to check fluency, pacing, and accurate modal verb usage.
+            </p>
+          </div>
+
+          <!-- Record Controls -->
+          <div class="space-y-3">
+            <div class="flex items-center space-x-2">
+              <button id="recordBtn" onclick="toggleRecording()" class="w-full py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow-md transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-microphone text-sm" id="micIcon"></i>
+                <span id="recordBtnText">Start Recording</span>
+              </button>
+            </div>
+
+            <!-- Audio Player -->
+            <div id="audioPlaybackContainer" class="hidden space-y-2 pt-2 border-t border-slate-700">
+              <span class="text-[11px] text-slate-300 block">Your Recorded Monologue:</span>
+              <audio id="audioPlayback" controls class="w-full h-8 rounded-lg outline-none"></audio>
+            </div>
+          </div>
+
+          <div class="text-[11px] text-slate-500 text-center">
+            Private in-browser recording • Audio stays on your machine
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Self-Assessment Rubric -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+        <h4 class="font-bold text-slate-900 text-sm flex items-center space-x-2">
+          <i class="fa-solid fa-clipboard-check text-brand-600"></i>
+          <span>CEFR B1 Self-Evaluation Checklist</span>
+        </h4>
+        <p class="text-xs text-slate-500">Check off the criteria you achieved during your spoken practice:</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Used at least 2 educational collocations (*vocational training*, *hands-on experience*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Used a modal of deduction correctly (*must be* or *can't be*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Linked two ideas with a contrast word (*whereas*, *despite*, *although*).</span>
+          </label>
+          <label class="flex items-start space-x-2.5 p-3 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100/80 cursor-pointer">
+            <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+            <span class="text-slate-700">Spoke continuously for over 60 seconds with clear communicative intent.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 space-y-2">
+    <p>© 2026 ESL Speaking Studio • CEFR B1 Fluency Curriculum Suite</p>
+    <p class="text-slate-400">Unit 10: Education, Lifelong Learning & Modern Skills • Ready for Classroom Handouts & Browser Practice</p>
+  </footer>
+
+  <!-- Script for Interactive Capabilities -->
+  <script>
+    // State
+    let ttsRate = 1.0;
+    let timerInterval = null;
+    let timerSeconds = 60;
+    let isTimerRunning = false;
+    let timerPhase = 'prep'; // 'prep' or 'speak'
+    let mediaRecorder = null;
+    let recordedChunks = [];
+    let isRecording = false;
+
+    // TTS Speed Toggle
+    function toggleTtsSpeed() {
+      if (ttsRate === 1.0) {
+        ttsRate = 0.8;
+        document.getElementById('speedLabel').innerText = '0.8x';
+      } else {
+        ttsRate = 1.0;
+        document.getElementById('speedLabel').innerText = '1.0x';
+      }
+    }
+
+    // Play TTS
+    function playTTS(text) {
+      if (!('speechSynthesis' in window)) {
+        alert('Text-to-speech is not supported by your browser.');
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = ttsRate;
+      utterance.lang = 'en-GB';
+
+      const voices = window.speechSynthesis.getVoices();
+      const ukVoice = voices.find(v => v.lang === 'en-GB' || v.name.includes('UK') || v.name.includes('British'));
+      if (ukVoice) utterance.voice = ukVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Model Education Pitch Sample
+    function playModelEducationPitch() {
+      const sampleText = "In my own learning experience, my school relied heavily on rote memorization and high-stakes exams. However, modern workplaces demand critical thinking and continuous upskilling. While university degrees remain prestigious, vocational apprenticeships are becoming far more attractive because graduates gain practical hands-on experience without crippling student debt. In the future, artificial intelligence must play an enormous role in customized tutoring, but it cannot completely replace the mentorship of human teachers. That is why lifelong learning is the most critical skill for anyone today.";
+      playTTS(sampleText);
+    }
+
+    // Flashcard Flipping
+    function flipCard(cardElem) {
+      const inner = cardElem.querySelector('.card-inner');
+      inner.classList.toggle('card-flipped');
+    }
+
+    function flipAllCards() {
+      const cards = document.querySelectorAll('.card-inner');
+      const anyUnflipped = Array.from(cards).some(c => !c.classList.contains('card-flipped'));
+      cards.forEach(c => {
+        if (anyUnflipped) {
+          c.classList.add('card-flipped');
+        } else {
+          c.classList.remove('card-flipped');
+        }
+      });
+    }
+
+    // Grammar Quiz Check
+    function checkAnswer(btnElem, isCorrect, feedbackText) {
+      const feedbackDiv = document.getElementById('quizFeedback');
+      feedbackDiv.classList.remove('hidden', 'text-rose-400', 'text-emerald-400');
+      
+      const parent = btnElem.parentElement;
+      const buttons = parent.querySelectorAll('button');
+      buttons.forEach(b => {
+        b.disabled = true;
+        b.classList.remove('bg-brand-600', 'bg-emerald-600');
+      });
+
+      if (isCorrect) {
+        btnElem.classList.add('bg-emerald-600', 'text-white');
+        feedbackDiv.classList.add('text-emerald-400');
+        feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> ${feedbackText}`;
+      } else {
+        btnElem.classList.add('bg-rose-600', 'text-white');
+        feedbackDiv.classList.add('text-rose-400');
+        feedbackDiv.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1"></i> ${feedbackText}`;
+      }
+    }
+
+    // Timer Logic
+    function loadScenarioPrompt(title) {
+      document.getElementById('activeScenarioTitle').innerText = title;
+      resetTimer();
+      const timerWidget = document.getElementById('practiceTimer');
+      timerWidget.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(timerSeconds / 60);
+      const secs = timerSeconds % 60;
+      document.getElementById('timerDisplay').innerText = 
+        `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function playBeep() {
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.value = 587.33; // D5
+        osc.type = 'sine';
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.5);
+      } catch (e) {
+        console.log('Web Audio tone suppressed:', e);
+      }
+    }
+
+    function toggleTimer() {
+      if (isTimerRunning) {
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        document.getElementById('timerIcon').className = 'fa-solid fa-play';
+        document.getElementById('timerBtnText').innerText = 'Resume';
+      } else {
+        isTimerRunning = true;
+        document.getElementById('timerIcon').className = 'fa-solid fa-pause';
+        document.getElementById('timerBtnText').innerText = 'Pause';
+        
+        timerInterval = setInterval(() => {
+          if (timerSeconds > 0) {
+            timerSeconds--;
+            updateTimerDisplay();
+          } else {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            playBeep();
+
+            if (timerPhase === 'prep') {
+              timerPhase = 'speak';
+              timerSeconds = 90;
+              document.getElementById('timerPhaseLabel').innerHTML = '<span class="text-brand-600 font-bold">Speaking Time! Deliver your answer out loud.</span>';
+              document.getElementById('timerBtnText').innerText = 'Start Speaking';
+              document.getElementById('timerIcon').className = 'fa-solid fa-play';
+              updateTimerDisplay();
+            } else {
+              timerPhase = 'done';
+              document.getElementById('timerPhaseLabel').innerHTML = '<span class="text-emerald-600 font-bold">Time finished! Great effort.</span>';
+              document.getElementById('timerBtnText').innerText = 'Restart';
+              document.getElementById('timerIcon').className = 'fa-solid fa-rotate-right';
+            }
+          }
+        }, 1000);
+      }
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      isTimerRunning = false;
+      timerPhase = 'prep';
+      timerSeconds = 60;
+      updateTimerDisplay();
+      document.getElementById('timerPhaseLabel').innerText = 'Preparation: 60s | Spoken delivery: 90s';
+      document.getElementById('timerBtnText').innerText = 'Start Prep';
+      document.getElementById('timerIcon').className = 'fa-solid fa-play';
+    }
+
+    // Audio Recorder
+    async function toggleRecording() {
+      const recordBtn = document.getElementById('recordBtn');
+      const recordBtnText = document.getElementById('recordBtnText');
+      const micIcon = document.getElementById('micIcon');
+      const indicator = document.getElementById('recordingIndicator');
+      const playbackContainer = document.getElementById('audioPlaybackContainer');
+      const audioPlayback = document.getElementById('audioPlayback');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          recordedChunks = [];
+          mediaRecorder = new MediaRecorder(stream);
+
+          mediaRecorder.ondataavailable = (e) => {
+            if (e.data.size > 0) recordedChunks.push(e.data);
+          };
+
+          mediaRecorder.onstop = () => {
+            const blob = new Blob(recordedChunks, { type: 'audio/webm' });
+            const audioUrl = URL.createObjectURL(blob);
+            audioPlayback.src = audioUrl;
+            playbackContainer.classList.remove('hidden');
+            stream.getTracks().forEach(track => track.stop());
+          };
+
+          mediaRecorder.start();
+          isRecording = true;
+          recordBtn.classList.remove('bg-brand-600', 'hover:bg-brand-500');
+          recordBtn.classList.add('bg-rose-600', 'hover:bg-rose-700');
+          recordBtnText.innerText = 'Stop Recording';
+          micIcon.className = 'fa-solid fa-stop text-sm';
+          indicator.classList.remove('hidden');
+        } catch (err) {
+          alert('Microphone access was denied or is unavailable in your browser.');
+        }
+      } else {
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+        isRecording = false;
+        recordBtn.classList.remove('bg-rose-600', 'hover:bg-rose-700');
+        recordBtn.classList.add('bg-brand-600', 'hover:bg-brand-500');
+        recordBtnText.innerText = 'Record Again';
+        micIcon.className = 'fa-solid fa-microphone text-sm';
+        indicator.classList.add('hidden');
+      }
+    }
+
+    // Initial voice cache load for TTS
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+      };
+    }
+  </script>
+</body>
+</html>
