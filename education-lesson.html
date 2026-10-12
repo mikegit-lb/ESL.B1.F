@@ -145,6 +145,7 @@
         <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Deduction & Contrast</a>
         <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Study Scenarios</a>
         <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Future Skills Pitch</a>
+        <a href="#questions" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">7. 30 Questions</a>
       </nav>
 
       <!-- Action Buttons -->
@@ -907,6 +908,748 @@
             <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
             <span class="text-slate-700">Spoke continuously for over 60 seconds with clear communicative intent.</span>
           </label>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Section 7: Comprehensive 30-Question Speaking Bank -->
+    <section id="questions" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 7: Spoken Fluency Bank</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">30 Spoken Practice Questions (CEFR B1)</h3>
+          <p class="text-sm text-slate-500">Graded into three progressive speaking tiers: Personal Experiences, Opinions & Dilemmas, and Societal Deep Dives.</p>
+        </div>
+        <div class="flex items-center flex-wrap gap-1.5 no-print">
+          <button onclick="filterQuestionTier('all')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white shadow-sm transition" data-tier="all">All (30)</button>
+          <button onclick="filterQuestionTier('part1')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part1">Part 1 (1–10)</button>
+          <button onclick="filterQuestionTier('part2')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part2">Part 2 (11–20)</button>
+          <button onclick="filterQuestionTier('part3')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part3">Part 3 (21–30)</button>
+        </div>
+      </div>
+
+      <!-- Questions Grid -->
+      <div id="questionsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Q1 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#1</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Who was the most inspiring or memorable teacher you ever had in school, and what made them special?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Past simple admiration & teacher qualities</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Who was the most inspiring or memorable teacher you ever had in school, and what made them special?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #1: Who was the most inspiring or memorable ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#2</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What was your absolute favorite school subject, and which subject did you dread the most?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Comparing academic disciplines</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What was your absolute favorite school subject, and which subject did you dread the most?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #2: What was your absolute favorite school s...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#3</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you prepare for important exams: cramming late at night or studying steadily weeks in advance?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Study habits & exam preparation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you prepare for important exams: cramming late at night or studying steadily weeks in advance?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #3: How do you prepare for important exams: ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#4</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What has been the most challenging aspect of learning the English language for you so far?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Reflecting on language difficulties</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What has been the most challenging aspect of learning the English language for you so far?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #4: What has been the most challenging aspec...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#5</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever taken an online course or video tutorial series? Did you actually complete it?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Online learning self-discipline</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever taken an online course or video tutorial series? Did you actually complete it?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #5: Have you ever taken an online course or ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#6</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you handle group projects when some team members refuse to do their fair share of the work?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Group dynamics & accountability</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you handle group projects when some team members refuse to do their fair share of the work?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #6: How do you handle group projects when so...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q7 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#7</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you feel nervous when asked to give a speech or presentation in front of a class or colleagues?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Public speaking anxiety & coping</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you feel nervous when asked to give a speech or presentation in front of a class or colleagues?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #7: Do you feel nervous when asked to give a...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q8 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#8</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What practical everyday skill (cooking, driving, coding, fixing cars) did you learn outside the classroom?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Informal education & life skills</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What practical everyday skill (cooking, driving, coding, fixing cars) did you learn outside the classroom?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #8: What practical everyday skill (cooking, ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q9 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#9</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How much homework is reasonable for school pupils to do each evening without getting burned out?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Quantifiers & balancing childhood</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How much homework is reasonable for school pupils to do each evening without getting burned out?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #9: How much homework is reasonable for scho...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q10 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#10</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is one subject you wish had been taught in your school that was completely omitted from the syllabus?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Curriculum critique & practical subjects</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is one subject you wish had been taught in your school that was completely omitted from the syllabus?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #10: What is one subject you wish had been ta...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q11 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#11</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is a university bachelor's degree still essential for career success, or are practical apprenticeships superior?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Degree vs vocational trades contrast</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is a university bachelor\'s degree still essential for career success, or are practical apprenticeships superior?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #11: Is a university bachelor\'s degree still...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q12 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#12</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should university tuition fees be abolished and paid entirely through public taxpayer funds?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Education economics & equality</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should university tuition fees be abolished and paid entirely through public taxpayer funds?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #12: Should university tuition fees be abolis...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q13 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#13</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do final exams test real understanding, or do they simply measure who can memorize facts temporarily?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Rote learning vs critical thinking</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do final exams test real understanding, or do they simply measure who can memorize facts temporarily?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #13: Do final exams test real understanding, ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q14 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#14</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should students wear school uniforms, or should they be free to express themselves in everyday casual clothes?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Uniform discipline vs self-expression</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should students wear school uniforms, or should they be free to express themselves in everyday casual clothes?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #14: Should students wear school uniforms, or...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q15 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#15</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should students be ranked publicly by test scores in class, or does that destroy self-esteem?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Competitive ranking vs cooperative learning</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should students be ranked publicly by test scores in class, or does that destroy self-esteem?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #15: Should students be ranked publicly by te...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q16 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#16</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is taking a 'gap year' to travel or work before starting university beneficial or a wasteful distraction?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Evaluating the gap year experience</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is taking a \'gap year\' to travel or work before starting university beneficial or a wasteful distraction?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #16: Is taking a \'gap year\' to travel or wo...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q17 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#17</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should students be allowed to use AI writing assistants (like ChatGPT) to assist with research papers?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Academic integrity & modern tools</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should students be allowed to use AI writing assistants (like ChatGPT) to assist with research papers?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #17: Should students be allowed to use AI wri...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q18 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#18</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why do some educational systems prioritize rote memorization while others focus on creative problem-solving?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Cultural educational differences</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why do some educational systems prioritize rote memorization while others focus on creative problem-solving?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #18: Why do some educational systems prioriti...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q19 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#19</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should humanities subjects (philosophy, literature, history) receive as much funding as STEM (science, tech)?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Value of arts vs science degrees</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should humanities subjects (philosophy, literature, history) receive as much funding as STEM (science, tech)?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #19: Should humanities subjects (philosophy, ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q20 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#20</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What advice would you give to a high school graduate who has no idea what career path to pursue?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Constructive career mentoring advice</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What advice would you give to a high school graduate who has no idea what career path to pursue?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #20: What advice would you give to a high sch...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q21 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#21</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How will the rise of artificial intelligence alter what knowledge and skills humans need to learn in school?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Future skills & AI educational disruption</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How will the rise of artificial intelligence alter what knowledge and skills humans need to learn in school?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #21: How will the rise of artificial intellig...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q22 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#22</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why is 'lifelong learning' no longer just a buzzword, but an absolute economic survival requirement?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Continuous upskilling & career longevity</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why is \'lifelong learning\' no longer just a buzzword, but an absolute economic survival requirement?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #22: Why is \'lifelong learning\' no longer j...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q23 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#23</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How does the 'digital divide' (lack of internet or laptops) disadvantage children in poorer communities?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Educational inequality & technological access</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How does the \'digital divide\' (lack of internet or laptops) disadvantage children in poorer communities?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #23: How does the \'digital divide\' (lack of...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q24 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#24</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why are many developed nations suffering from severe teacher shortages, and how can we value teachers better?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Societal respect & compensation for educators</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why are many developed nations suffering from severe teacher shortages, and how can we value teachers better?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #24: Why are many developed nations suffering...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q25 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#25</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should financial literacy, mental health coping, and emotional intelligence be core subjects in high schools?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Holistic modern curriculum reform</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should financial literacy, mental health coping, and emotional intelligence be core subjects in high schools?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #25: Should financial literacy, mental health...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q26 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#26</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will virtual reality headsets and AI avatars replace traditional physical university lecture halls?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Technological evolution of universities</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will virtual reality headsets and AI avatars replace traditional physical university lecture halls?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #26: Will virtual reality headsets and AI ava...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q27 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#27</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How can educational systems encourage original creative thinking rather than standardized test conformity?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Nurturing innovation vs standard testing</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How can educational systems encourage original creative thinking rather than standardized test conformity?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #27: How can educational systems encourage or...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q28 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#28</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How does academic stress and parental expectation contribute to student depression and burnout?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Mental health crises in student populations</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How does academic stress and parental expectation contribute to student depression and burnout?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #28: How does academic stress and parental ex...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q29 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#29</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will micro-credentials, certifications, and portfolio projects eventually replace traditional four-year degrees?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Alternative accreditation & employer hiring</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will micro-credentials, certifications, and portfolio projects eventually replace traditional four-year degrees?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #29: Will micro-credentials, certifications, ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q30 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#30</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What will an average elementary school classroom look and function like in the year 2050?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Futuristic educational speculation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What will an average elementary school classroom look and function like in the year 2050?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #30: What will an average elementary school c...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>

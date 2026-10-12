@@ -145,6 +145,7 @@
         <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. -ed/-ing & Second Cond.</a>
         <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Roleplay Scenarios</a>
         <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Fluency Pitch</a>
+        <a href="#questions" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">7. 30 Questions</a>
       </nav>
 
       <!-- Action Buttons -->
@@ -914,6 +915,748 @@
             <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
             <span class="text-slate-700">Spoke continuously for over 60 seconds with minimal hesitations.</span>
           </label>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Section 7: Comprehensive 30-Question Speaking Bank -->
+    <section id="questions" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 7: Spoken Fluency Bank</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">30 Spoken Practice Questions (CEFR B1)</h3>
+          <p class="text-sm text-slate-500">Graded into three progressive speaking tiers: Personal Experiences, Opinions & Dilemmas, and Societal Deep Dives.</p>
+        </div>
+        <div class="flex items-center flex-wrap gap-1.5 no-print">
+          <button onclick="filterQuestionTier('all')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white shadow-sm transition" data-tier="all">All (30)</button>
+          <button onclick="filterQuestionTier('part1')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part1">Part 1 (1–10)</button>
+          <button onclick="filterQuestionTier('part2')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part2">Part 2 (11–20)</button>
+          <button onclick="filterQuestionTier('part3')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part3">Part 3 (21–30)</button>
+        </div>
+      </div>
+
+      <!-- Questions Grid -->
+      <div id="questionsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Q1 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#1</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is the best movie or television series you have watched recently, and why did you love it?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Descriptive praise & -ed/-ing adjectives</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is the best movie or television series you have watched recently, and why did you love it?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #1: What is the best movie or television ser...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#2</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever watched an entire season of a show in a single weekend? What was the series?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Binge-watching habits & guilty pleasures</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever watched an entire season of a show in a single weekend? What was the series?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #2: Have you ever watched an entire season o...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#3</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you prefer going to an IMAX cinema or streaming films from the comfort of your sofa?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Cinema atmosphere vs home comfort</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you prefer going to an IMAX cinema or streaming films from the comfort of your sofa?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #3: Do you prefer going to an IMAX cinema or...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#4</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Which movie or television episode has had the most shocking plot twist you have ever witnessed?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Narrative tension & plot reveals</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Which movie or television episode has had the most shocking plot twist you have ever witnessed?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #4: Which movie or television episode has ha...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#5</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is your favorite genre: psychological thrillers, light comedies, sci-fi, horror, or documentaries?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Genre vocabulary & personal taste</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is your favorite genre: psychological thrillers, light comedies, sci-fi, horror, or documentaries?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #5: What is your favorite genre: psychologic...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#6</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you always watch foreign language films with original audio and subtitles, or do you prefer dubbing?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Subtitles vs dubbed voiceovers</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you always watch foreign language films with original audio and subtitles, or do you prefer dubbing?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #6: Do you always watch foreign language fil...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q7 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#7</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Describe a movie soundtrack or theme song that you still listen to outside the film."</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Musical emotions & film scoring</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Describe a movie soundtrack or theme song that you still listen to outside the film.')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #7: Describe a movie soundtrack or theme son...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q8 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#8</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever walked out of a cinema theater before the movie finished because it was so dreadful?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Past disappointment & strong critiques</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever walked out of a cinema theater before the movie finished because it was so dreadful?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #8: Have you ever walked out of a cinema the...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q9 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#9</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What animated movie or television cartoon made the deepest impression on you during your childhood?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Nostalgia & childhood memories</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What animated movie or television cartoon made the deepest impression on you during your childhood?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #9: What animated movie or television cartoo...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q10 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#10</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you choose what to watch when there are thousands of titles available on Netflix?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Decision fatigue & recommendation algorithms</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you choose what to watch when there are thousands of titles available on Netflix?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #10: How do you choose what to watch when the...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q11 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#11</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Are Hollywood movie studios running out of original ideas by producing endless sequels and superhero reboots?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Criticizing commercial unoriginality</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Are Hollywood movie studios running out of original ideas by producing endless sequels and superhero reboots?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #11: Are Hollywood movie studios running out ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q12 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#12</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why are book adaptations almost universally considered inferior to the original written novels?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Comparing literature vs cinematography</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why are book adaptations almost universally considered inferior to the original written novels?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #12: Why are book adaptations almost universa...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q13 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#13</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What should the social punishment be for people who deliberately spoil major plot twists online?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Spoiler etiquette & online courtesy</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What should the social punishment be for people who deliberately spoil major plot twists online?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #13: What should the social punishment be for...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q14 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#14</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is going to the cinema becoming too expensive for regular families when tickets and popcorn cost £20 each?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Entertainment affordability & value</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is going to the cinema becoming too expensive for regular families when tickets and popcorn cost £20 each?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #14: Is going to the cinema becoming too expe...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q15 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#15</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do violent movies and realistic crime dramas influence aggressive behavior in real life?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Media psychology & behavior debate</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do violent movies and realistic crime dramas influence aggressive behavior in real life?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #15: Do violent movies and realistic crime dr...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q16 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#16</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should streaming platforms drop all episodes at once, or release one episode per week to build suspense?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Binge model vs weekly cliffhanger anticipation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should streaming platforms drop all episodes at once, or release one episode per week to build suspense?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #16: Should streaming platforms drop all epis...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q17 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#17</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is a movie considered a masterpiece only if high-brow critics love it, or do box-office sales count more?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Critical acclaim vs popular success</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is a movie considered a masterpiece only if high-brow critics love it, or do box-office sales count more?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #17: Is a movie considered a masterpiece only...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q18 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#18</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How annoying is it when cinema audiences whisper, check glowing phone screens, or chew loudly during a film?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Audience etiquette in public theaters</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How annoying is it when cinema audiences whisper, check glowing phone screens, or chew loudly during a film?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #18: How annoying is it when cinema audiences...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q19 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#19</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"If you could step inside the universe of any fictional film or television series, which would you pick?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Second conditional fantasy choice</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('If you could step inside the universe of any fictional film or television series, which would you pick?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #19: If you could step inside the universe of...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q20 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#20</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should classical movies with offensive historic stereotypes be censored, warned about, or left untouched?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Historical cinema preservation & warnings</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should classical movies with offensive historic stereotypes be censored, warned about, or left untouched?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #20: Should classical movies with offensive h...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q21 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#21</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do streaming algorithms limit our cultural curiosity by only recommending things similar to our past history?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Echo chambers & algorithmic curation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do streaming algorithms limit our cultural curiosity by only recommending things similar to our past history?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #21: How do streaming algorithms limit our cu...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q22 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#22</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will artificial intelligence software eventually write entire Hollywood blockbusters and generate realistic actors?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Future of creative labor & AI actors</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will artificial intelligence software eventually write entire Hollywood blockbusters and generate realistic actors?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #22: Will artificial intelligence software ev...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q23 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#23</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why are true-crime documentaries about murderers and con artists so immensely popular worldwide?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Psychological fascination with dark topics</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why are true-crime documentaries about murderers and con artists so immensely popular worldwide?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #23: Why are true-crime documentaries about m...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q24 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#24</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Can video games with rich narratives be considered legitimate forms of cinematic art alongside movies?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Video game storytelling vs film</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Can video games with rich narratives be considered legitimate forms of cinematic art alongside movies?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #24: Can video games with rich narratives be ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q25 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#25</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How has the global rise of South Korean cinema and television (K-dramas) challenged Hollywood dominance?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Global cultural globalization</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How has the global rise of South Korean cinema and television (K-dramas) challenged Hollywood dominance?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #25: How has the global rise of South Korean ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q26 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#26</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What impact will virtual reality headsets have on the future of traditional 2D rectangular cinema screens?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Immersive entertainment technology</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What impact will virtual reality headsets have on the future of traditional 2D rectangular cinema screens?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #26: What impact will virtual reality headset...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q27 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#27</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should governments subsidize local independent filmmakers to protect their national culture against US blockbusters?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Cultural preservation & government funding</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should governments subsidize local independent filmmakers to protect their national culture against US blockbusters?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #27: Should governments subsidize local indep...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q28 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#28</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How does celebrity worship culture affect public perceptions of reality and body image?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Fame psychology & public obsession</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How does celebrity worship culture affect public perceptions of reality and body image?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #28: How does celebrity worship culture affec...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q29 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#29</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why do some movies age beautifully over fifty years while others feel completely unwatchable?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Timeless art vs dated trends</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why do some movies age beautifully over fifty years while others feel completely unwatchable?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #29: Why do some movies age beautifully over ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q30 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#30</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"If you had a £100 million budget to direct any movie or mini-series you wanted, what story would you tell?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Second conditional creative pitch</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('If you had a £100 million budget to direct any movie or mini-series you wanted, what story would you tell?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #30: If you had a £100 million budget to dire...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>

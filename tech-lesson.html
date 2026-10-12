@@ -121,6 +121,7 @@
         <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Habits & Future</a>
         <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Digital Roleplay</a>
         <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Fluency Challenge</a>
+        <a href="#questions" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">7. 30 Questions</a>
       </nav>
 
       <!-- Action Buttons -->
@@ -813,6 +814,748 @@
         </div>
       </div>
     </section>
+  
+    <!-- Section 7: Comprehensive 30-Question Speaking Bank -->
+    <section id="questions" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 7: Spoken Fluency Bank</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">30 Spoken Practice Questions (CEFR B1)</h3>
+          <p class="text-sm text-slate-500">Graded into three progressive speaking tiers: Personal Experiences, Opinions & Dilemmas, and Societal Deep Dives.</p>
+        </div>
+        <div class="flex items-center flex-wrap gap-1.5 no-print">
+          <button onclick="filterQuestionTier('all')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white shadow-sm transition" data-tier="all">All (30)</button>
+          <button onclick="filterQuestionTier('part1')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part1">Part 1 (1–10)</button>
+          <button onclick="filterQuestionTier('part2')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part2">Part 2 (11–20)</button>
+          <button onclick="filterQuestionTier('part3')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part3">Part 3 (21–30)</button>
+        </div>
+      </div>
+
+      <!-- Questions Grid -->
+      <div id="questionsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Q1 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#1</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What was the very first electronic device or phone you owned, and what did you use it for?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>'Used to' vs present habits</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What was the very first electronic device or phone you owned, and what did you use it for?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #1: What was the very first electronic devic...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#2</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How many hours of screen time do you average daily on your smartphone according to your settings?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Numbers, quantifiers & honest reflection</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How many hours of screen time do you average daily on your smartphone according to your settings?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #2: How many hours of screen time do you ave...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#3</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is the first app you open when you wake up in the morning, and why?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Morning digital routines</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is the first app you open when you wake up in the morning, and why?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #3: What is the first app you open when you ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#4</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever tried doing a 24-hour 'digital detox' without screens? How did you cope?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Describing challenges & withdrawal feelings</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever tried doing a 24-hour \'digital detox\' without screens? How did you cope?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #4: Have you ever tried doing a 24-hour \'di...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#5</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Which smartphone app has genuinely improved your productivity or daily lifestyle?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Relative clauses & specific examples</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Which smartphone app has genuinely improved your productivity or daily lifestyle?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #5: Which smartphone app has genuinely impro...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#6</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you manage notifications so you don't get constantly interrupted while working?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Settings & focus strategies</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you manage notifications so you don\'t get constantly interrupted while working?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #6: How do you manage notifications so you d...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q7 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#7</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you prefer listening to music through streaming platforms or buying vinyl/physical copies?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Modern streaming vs physical media</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you prefer listening to music through streaming platforms or buying vinyl/physical copies?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #7: Do you prefer listening to music through...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q8 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#8</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever made an impulsive purchase online after seeing a targeted social media advert?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Admitting regrets & shopping habits</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever made an impulsive purchase online after seeing a targeted social media advert?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #8: Have you ever made an impulsive purchase...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q9 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#9</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What kind of content or videos do you find yourself scrolling through when procrastinating?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Describing online rabbit holes</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What kind of content or videos do you find yourself scrolling through when procrastinating?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #9: What kind of content or videos do you fi...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q10 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#10</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you stay in touch with friends who live in different cities or countries?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Communication tools & group chats</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you stay in touch with friends who live in different cities or countries?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #10: How do you stay in touch with friends wh...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q11 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#11</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"At what age should children be given their own personal smartphone with internet access?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Parental rules & child development</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('At what age should children be given their own personal smartphone with internet access?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #11: At what age should children be given the...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q12 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#12</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Does social media make people feel more connected, or does it increase loneliness and jealousy?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Psychological contrast (on the one hand)</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Does social media make people feel more connected, or does it increase loneliness and jealousy?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #12: Does social media make people feel more ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q13 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#13</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you prefer reading physical printed books or e-books on a Kindle screen?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Tactile experience vs convenience</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you prefer reading physical printed books or e-books on a Kindle screen?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #13: Do you prefer reading physical printed b...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q14 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#14</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should families implement a strict 'no phones at the dinner table' rule?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Household rules with 'ought to'</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should families implement a strict \'no phones at the dinner table\' rule?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #14: Should families implement a strict \'no ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q15 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#15</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Are you worried about how much personal browsing data big tech companies collect on you?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Privacy concerns & digital footprints</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Are you worried about how much personal browsing data big tech companies collect on you?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #15: Are you worried about how much personal ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q16 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#16</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is generative AI (like ChatGPT) making human students lazier or more creative?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Weighing educational pros and cons</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is generative AI (like ChatGPT) making human students lazier or more creative?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #16: Is generative AI (like ChatGPT) making h...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q17 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#17</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should employers be allowed to view your public social media profiles before hiring you?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Freedom of expression vs employer rights</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should employers be allowed to view your public social media profiles before hiring you?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #17: Should employers be allowed to view your...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q18 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#18</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How can people protect themselves against convincing online scams and deepfakes?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Giving clear cautionary advice</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How can people protect themselves against convincing online scams and deepfakes?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #18: How can people protect themselves agains...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q19 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#19</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do influencers have an ethical responsibility to tell followers when their photos are digitally edited?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Ethics of online aesthetics & truth</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do influencers have an ethical responsibility to tell followers when their photos are digitally edited?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #19: Do influencers have an ethical responsib...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q20 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#20</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Would you ever install a microchip under your skin to make contactless payments and open doors?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Second Conditional speculative boundary</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Would you ever install a microchip under your skin to make contactless payments and open doors?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #20: Would you ever install a microchip under...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q21 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#21</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will artificial intelligence eventually develop conscious emotions, or is that pure science fiction?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Philosophical speculation with modals</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will artificial intelligence eventually develop conscious emotions, or is that pure science fiction?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #21: Will artificial intelligence eventually ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q22 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#22</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How are short-form video algorithms (TikTok/Reels) affecting the attention spans of youth?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Cognitive impact & scientific discussion</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How are short-form video algorithms (TikTok/Reels) affecting the attention spans of youth?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #22: How are short-form video algorithms (Tik...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q23 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#23</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should internet access be legally classified as a fundamental human right by the United Nations?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Human rights & digital equality</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should internet access be legally classified as a fundamental human right by the United Nations?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #23: Should internet access be legally classi...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q24 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#24</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What will happen to society if deepfake technology makes it impossible to believe video evidence?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Legal & democratic ramifications</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What will happen to society if deepfake technology makes it impossible to believe video evidence?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #24: What will happen to society if deepfake ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q25 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#25</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Are we heading toward a completely cashless society, and who gets left behind in that world?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Financial exclusion & technology shifts</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Are we heading toward a completely cashless society, and who gets left behind in that world?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #25: Are we heading toward a completely cashl...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q26 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#26</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How can governments regulate powerful tech monopolies without stifling innovation?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Policy balancing & economic theory</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How can governments regulate powerful tech monopolies without stifling innovation?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #26: How can governments regulate powerful te...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q27 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#27</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will virtual reality headsets ever replace physical offices and classrooms entirely?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Predicting 20-year technological adoption</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will virtual reality headsets ever replace physical offices and classrooms entirely?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #27: Will virtual reality headsets ever repla...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q28 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#28</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How has smartphone culture changed face-to-face dating and romantic relationships?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Sociological changes in courtship</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How has smartphone culture changed face-to-face dating and romantic relationships?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #28: How has smartphone culture changed face-...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q29 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#29</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you believe artificial intelligence will create more jobs than it destroys in the long run?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Economic debate & technological history</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you believe artificial intelligence will create more jobs than it destroys in the long run?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #29: Do you believe artificial intelligence w...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q30 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#30</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"If all internet connectivity collapsed worldwide for one week, how would modern cities survive?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Disaster scenario & societal resilience</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('If all internet connectivity collapsed worldwide for one week, how would modern cities survive?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #30: If all internet connectivity collapsed w...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer -->

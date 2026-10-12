@@ -145,6 +145,7 @@
         <a href="#grammar" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">4. Modifiers & Polite Requests</a>
         <a href="#roleplay" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">5. Tenant Scenarios</a>
         <a href="#challenge" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">6. Neighborhood Pitch</a>
+        <a href="#questions" class="px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">7. 30 Questions</a>
       </nav>
 
       <!-- Action Buttons -->
@@ -909,6 +910,748 @@
             <input type="checkbox" class="mt-0.5 rounded text-brand-600 focus:ring-brand-500">
             <span class="text-slate-700">Spoke continuously for over 60 seconds with clear pronunciation.</span>
           </label>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Section 7: Comprehensive 30-Question Speaking Bank -->
+    <section id="questions" class="space-y-6">
+      <div class="border-l-4 border-brand-600 pl-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Stage 7: Spoken Fluency Bank</span>
+          <h3 class="text-2xl font-bold text-slate-900 font-display">30 Spoken Practice Questions (CEFR B1)</h3>
+          <p class="text-sm text-slate-500">Graded into three progressive speaking tiers: Personal Experiences, Opinions & Dilemmas, and Societal Deep Dives.</p>
+        </div>
+        <div class="flex items-center flex-wrap gap-1.5 no-print">
+          <button onclick="filterQuestionTier('all')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-600 text-white shadow-sm transition" data-tier="all">All (30)</button>
+          <button onclick="filterQuestionTier('part1')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part1">Part 1 (1–10)</button>
+          <button onclick="filterQuestionTier('part2')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part2">Part 2 (11–20)</button>
+          <button onclick="filterQuestionTier('part3')" class="tier-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 transition" data-tier="part3">Part 3 (21–30)</button>
+        </div>
+      </div>
+
+      <!-- Questions Grid -->
+      <div id="questionsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Q1 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#1</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Describe the home you grew up in during your childhood. What was your favorite room?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Descriptive past simple & spatial memories</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Describe the home you grew up in during your childhood. What was your favorite room?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #1: Describe the home you grew up in during ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#2</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is your current living arrangement: do you live alone, with family, or share with flatmates?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Present living situations</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is your current living arrangement: do you live alone, with family, or share with flatmates?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #2: What is your current living arrangement:...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#3</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What are the most convenient amenities located within a five-minute walking distance of your home?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Prepositional phrases & neighborhood perks</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What are the most convenient amenities located within a five-minute walking distance of your home?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #3: What are the most convenient amenities l...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#4</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever had an awkward or funny encounter with an eccentric neighbor in your building?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Storytelling & describing characters</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever had an awkward or funny encounter with an eccentric neighbor in your building?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #4: Have you ever had an awkward or funny en...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#5</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How do you divide household chores (cleaning, dishes, taking out trash) in your current living space?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Chore routines & fairness</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How do you divide household chores (cleaning, dishes, taking out trash) in your current living space?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #5: How do you divide household chores (clea...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#6</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Have you ever assembled flat-pack furniture (like IKEA)? Did you find it frustrating or satisfying?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Narrative experience with hands-on tasks</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Have you ever assembled flat-pack furniture (like IKEA)? Did you find it frustrating or satisfying?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #6: Have you ever assembled flat-pack furnit...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q7 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#7</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is the most annoying thing about your current apartment or living space that you wish you could change?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Comparative modifiers (*far too cramped*)</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is the most annoying thing about your current apartment or living space that you wish you could change?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #7: What is the most annoying thing about yo...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q8 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#8</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How many times have you moved house in your life? Do you find moving exciting or stressful?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Life milestones & moving memories</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How many times have you moved house in your life? Do you find moving exciting or stressful?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #8: How many times have you moved house in y...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q9 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#9</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Do you prefer having a private garden/balcony, or do you rarely spend time outdoors at home?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Balconies, greenery & outdoor spaces</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Do you prefer having a private garden/balcony, or do you rarely spend time outdoors at home?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #9: Do you prefer having a private garden/ba...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q10 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part1">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#10</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-emerald-50 text-emerald-700 border-emerald-200">Part 1</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What personal decorations, photos, or plants make a rental flat truly feel like 'home' to you?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Creating cozy living environments</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What personal decorations, photos, or plants make a rental flat truly feel like \'home\' to you?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #10: What personal decorations, photos, or pl...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q11 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#11</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Would you rather rent an apartment forever with zero maintenance worries, or own a house with a huge mortgage?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Weighing long-term financial security vs freedom</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Would you rather rent an apartment forever with zero maintenance worries, or own a house with a huge mortgage?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #11: Would you rather rent an apartment forev...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q12 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#12</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is living in a high-rise downtown apartment tower better or worse than a quiet suburban house with a yard?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Comparing urban density vs quiet suburbs</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is living in a high-rise downtown apartment tower better or worse than a quiet suburban house with a yard?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #12: Is living in a high-rise downtown apartm...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q13 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#13</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should landlords be legally forbidden from banning pets (cats, dogs) in rental contracts?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Tenant rights & pet welfare</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should landlords be legally forbidden from banning pets (cats, dogs) in rental contracts?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #13: Should landlords be legally forbidden fr...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q14 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#14</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How should you handle a neighbor who blasts loud techno music through shared walls at 2:00 AM on a Tuesday?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Assertive polite conflict resolution</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How should you handle a neighbor who blasts loud techno music through shared walls at 2:00 AM on a Tuesday?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #14: How should you handle a neighbor who bla...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q15 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#15</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is renting a fully furnished apartment better than buying your own furniture for an unfurnished flat?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Flexibility vs personalization</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is renting a fully furnished apartment better than buying your own furniture for an unfurnished flat?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #15: Is renting a fully furnished apartment b...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q16 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#16</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should cities restrict property investors from buying up residential apartments solely to run tourist Airbnbs?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Housing availability & tourist regulation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should cities restrict property investors from buying up residential apartments solely to run tourist Airbnbs?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #16: Should cities restrict property investor...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q17 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#17</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What are the signs of a dishonest or negligent landlord that flat-hunters should watch out for during a viewing?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Asking probing questions & red flags</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What are the signs of a dishonest or negligent landlord that flat-hunters should watch out for during a viewing?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #17: What are the signs of a dishonest or neg...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q18 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#18</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Would you ever consider living in an ultra-compact 15-square-meter 'micro-apartment' to save money in a capital city?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Second conditional minimalism</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Would you ever consider living in an ultra-compact 15-square-meter \'micro-apartment\' to save money in a capital city?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #18: Would you ever consider living in an ult...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q19 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#19</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How can flatmates resolve disagreements over kitchen cleaning without screaming at each other?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Communication strategies & house rotas</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How can flatmates resolve disagreements over kitchen cleaning without screaming at each other?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #19: How can flatmates resolve disagreements ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q20 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part2">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#20</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-amber-50 text-amber-700 border-amber-200">Part 2</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Is gentrification good because it renovates run-down neighborhoods, or bad because it displaces long-time locals?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Evaluating urban transformation</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Is gentrification good because it renovates run-down neighborhoods, or bad because it displaces long-time locals?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #20: Is gentrification good because it renova...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q21 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#21</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Why has finding affordable rental housing become an absolute crisis for young adults in major world cities?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Root economic causes & housing market</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Why has finding affordable rental housing become an absolute crisis for young adults in major world cities?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #21: Why has finding affordable rental housin...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q22 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#22</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What can municipal governments do to effectively reduce and solve urban homelessness?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Social policy & compassionate initiatives</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What can municipal governments do to effectively reduce and solve urban homelessness?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #22: What can municipal governments do to eff...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q23 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#23</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What is the concept of a '15-minute city', and why are modern urban planners so enthusiastic about it?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Urban design & reducing commutes</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What is the concept of a \'15-minute city\', and why are modern urban planners so enthusiastic about it?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #23: What is the concept of a \'15-minute cit...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q24 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#24</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How does living in massive high-density concrete apartment blocks affect human mental health and social isolation?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Psychology of modern architecture</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How does living in massive high-density concrete apartment blocks affect human mental health and social isolation?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #24: How does living in massive high-density ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q25 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#25</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Will 3D-printed modular homes and prefabricated construction solve the global shortage of houses?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Futuristic construction technology</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Will 3D-printed modular homes and prefabricated construction solve the global shortage of houses?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #25: Will 3D-printed modular homes and prefab...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q26 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#26</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"Should historic residential buildings be strictly preserved, or demolished to build taller modern housing complexes?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Historic preservation vs population capacity</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('Should historic residential buildings be strictly preserved, or demolished to build taller modern housing complexes?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #26: Should historic residential buildings be...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q27 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#27</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"What are the benefits of 'intergenerational housing' where university students share apartments with elderly pensioners?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Social cohesion & mutually beneficial living</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('What are the benefits of \'intergenerational housing\' where university students share apartments with elderly pensioners?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #27: What are the benefits of \'intergenerati...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q28 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#28</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How will smart home technology (connected fridges, automated heating, voice assistants) reshape residential privacy?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Smart homes & surveillance risks</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How will smart home technology (connected fridges, automated heating, voice assistants) reshape residential privacy?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #28: How will smart home technology (connecte...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q29 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#29</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"How must residential architecture adapt to survive extreme climate events like flash floods and 45°C heatwaves?"</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Climate resilience in home construction</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('How must residential architecture adapt to survive extreme climate events like flash floods and 45°C heatwaves?')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #29: How must residential architecture adapt ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
+        </div>
+        <!-- Q30 -->
+        <div class="q-card p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-brand-400 hover:shadow-md transition flex flex-col justify-between space-y-3" data-tier="part3">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 font-bold text-xs flex items-center justify-center border border-brand-200">#30</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-indigo-50 text-indigo-700 border-indigo-200">Part 3</span>
+            </div>
+            <p class="text-xs font-bold text-slate-800 leading-relaxed font-sans">"If you could design your ultimate dream home without budget limits, describe its location, layout, and style."</p>
+            <div class="inline-flex items-center space-x-1 text-[11px] text-slate-500 italic bg-slate-50 px-2 py-1 rounded-md border border-slate-100">
+              <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i>
+              <span>Second conditional architectural fantasy</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs no-print">
+            <button onclick="playTTS('If you could design your ultimate dream home without budget limits, describe its location, layout, and style.')" class="text-brand-600 hover:text-brand-800 font-semibold flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+              <span>Listen</span>
+            </button>
+            <button onclick="loadScenarioPrompt('Question #30: If you could design your ultimate dream ...')" class="text-slate-500 hover:text-slate-800 font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-stopwatch text-slate-400"></i>
+              <span>To Timer</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>

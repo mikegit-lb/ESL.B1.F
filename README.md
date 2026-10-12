@@ -44,8 +44,15 @@ Every lesson module is a standalone, dependency-free single-page web application
 5. **Self-Assessment Checklists:**
    - CEFR B1 criteria rubrics on every unit allowing learners to track their communicative competence.
 
-6. **Classroom Print Mode (`@media print`):**
-   - Cleanly hides digital widgets and audio controls, formatting the lesson into a clean, 2-page printable handout for physical classrooms.
+6. **300-Question Graded Spoken Fluency Bank (30 per unit):**
+   - Each module contains 30 themed B1 speaking questions split into 3 progressive tiers:
+     - **Part 1 (Q1–10):** Personal Experience & Daily Habits
+     - **Part 2 (Q11–20):** Opinions, Dilemmas & Hypothetical Decisions
+     - **Part 3 (Q21–30):** Deep Dives, Ethics & Societal Speculation
+   - Equipped with instant audio pronunciation (`Listen`) and direct timer practice integration (`To Timer`).
+
+7. **Classroom Print Mode (`@media print`):**
+   - Cleanly hides digital widgets and audio controls, formatting the lesson and questions into a clean printable handout for physical classrooms.
 
 ---
 
